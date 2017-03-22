@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="qY5-eE-sTE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="qY5-eE-sTE">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -1121,7 +1121,7 @@ See "about Step-by-Step study" for Rochester criteria diagnostic accuracy on the
                         <viewControllerLayoutGuide type="bottom" id="xKB-D0-pPR"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ust-7r-LYc">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="968"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZmT-a6-rH7">
@@ -1446,7 +1446,7 @@ for review</string>
                         <viewControllerLayoutGuide type="bottom" id="rmU-AG-cJQ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="SeN-CL-qbs">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="968"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mpI-1i-Kkf">
@@ -1627,7 +1627,7 @@ There are several pneumonia severity scoring schemes developed and evaluated in 
                         <viewControllerLayoutGuide type="bottom" id="1E4-GX-O3U"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="9ck-FQ-5Yo">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="968"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AJ9-ux-AbD">
@@ -1713,7 +1713,7 @@ For more topics and guidance on Community Acquired Pneumonia management, choose 
                         <viewControllerLayoutGuide type="bottom" id="3ct-8r-BHl"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="6n2-FW-VYg">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="968"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7TG-Q5-4kD">
@@ -1814,7 +1814,7 @@ Minor Criteria ICU Admission:
                         <viewControllerLayoutGuide type="bottom" id="dRL-Kg-6vE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ER4-EZ-RMo">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="968"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kVQ-ry-024">
@@ -1899,7 +1899,7 @@ For more topics and guidance on Community Acquired Pneumonia management, choose 
                         <viewControllerLayoutGuide type="bottom" id="KvW-AK-MXd"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="2t9-6P-2w5">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="968"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0iX-k1-d4a">
@@ -1984,7 +1984,7 @@ For more topics and guidance on Community Acquired Pneumonia management, choose 
                         <viewControllerLayoutGuide type="bottom" id="Epc-40-Nh1"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="il3-vA-UEN">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="968"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VdD-ZS-Ebf">
@@ -2066,7 +2066,7 @@ For more topics and guidance on Community Acquired Pneumonia management, choose 
                         <viewControllerLayoutGuide type="bottom" id="Ux2-dt-ooa"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="KNZ-cw-8Me">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="968"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VVA-YC-CJJ">
@@ -2250,7 +2250,7 @@ For more topics and guidance on Community Acquired Pneumonia management, choose 
                         <viewControllerLayoutGuide type="bottom" id="aVL-e9-DvZ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="U72-am-Jkf">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="968"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yXt-SY-6S5">
@@ -2351,7 +2351,7 @@ For more topics and guidance on Community Acquired Pneumonia management, choose 
                         <viewControllerLayoutGuide type="bottom" id="bYa-eh-hJU"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Me3-ql-rir">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="968"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e3J-ph-Niq">
@@ -2445,7 +2445,7 @@ For more topics and guidance on Community Acquired Pneumonia management, choose 
                         <viewControllerLayoutGuide type="bottom" id="MhB-c7-omF"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="SWg-Uq-hm2">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="968"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="35z-jf-Wt2">
@@ -2543,7 +2543,7 @@ For more topics and guidance on Community Acquired Pneumonia management, choose 
                         <viewControllerLayoutGuide type="bottom" id="nCK-66-VXn"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="VBm-8j-oN5">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="968"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oxe-rm-n39">
@@ -2634,7 +2634,7 @@ For more topics and guidance on Community Acquired Pneumonia management, choose 
                         <viewControllerLayoutGuide type="bottom" id="JYg-Qm-ufZ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="lKF-95-nid">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="968"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AOk-e4-qq6">
@@ -2699,7 +2699,7 @@ Respiratory viruses (ex: Influenza A
                         <viewControllerLayoutGuide type="bottom" id="PE8-sk-Ch7"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="4wU-TZ-tnv">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="968"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZAN-FS-xGe">
@@ -2891,7 +2891,7 @@ Aminoglyc + Resp Fluoroq (levo, moxi)</string>
                         <viewControllerLayoutGuide type="bottom" id="7Nr-6f-6dO"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="9zh-yz-Bur">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="968"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PAf-J6-mD2">
@@ -3059,7 +3059,7 @@ plus Pseudomonas aeruginosa in presence of risk factors</string>
                         <viewControllerLayoutGuide type="bottom" id="FQP-PA-fhn"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="A3v-2L-VHP">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="968"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="674-ZT-2vl">
@@ -3126,7 +3126,7 @@ Respiratory viruses (ex: Influenza A
                         <viewControllerLayoutGuide type="bottom" id="p3T-Mp-Qq2"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="n6J-UY-uO1">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="968"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="630-uo-NDC">
@@ -3217,7 +3217,7 @@ Respiratory viruses (ex: Influenza A
                         <viewControllerLayoutGuide type="bottom" id="6OK-sO-1Rp"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Xv9-HX-AV0">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="968"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bQQ-Kn-fzh">
@@ -3318,7 +3318,7 @@ Aminoglyc + Resp Fluoroq (levo, moxi)</string>
                         <viewControllerLayoutGuide type="bottom" id="myU-r5-dKA"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="xDC-G9-cUN">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="968"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zOL-PG-GBY">
@@ -3417,7 +3417,7 @@ Resp Fluoroquin (levo, moxi)</string>
                         <viewControllerLayoutGuide type="bottom" id="Odi-TO-YcI"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="SOc-gn-N9J">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="968"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vKm-Tc-1bR">
@@ -3482,7 +3482,7 @@ plus Pseudomonas aeruginosa in presence of risk factors</string>
                         <viewControllerLayoutGuide type="bottom" id="IMQ-Zf-b34"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="11x-qB-pmv">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="968"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sOA-Ah-3Yw">
@@ -3545,7 +3545,7 @@ Haemophilus influenzae</string>
                         <viewControllerLayoutGuide type="bottom" id="ELf-WO-h4b"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="9Md-Vs-4l0">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="968"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Ma-yK-LRF">
@@ -3627,7 +3627,7 @@ Linezolid 600 mg IV q12h</string>
                         <viewControllerLayoutGuide type="bottom" id="yGJ-By-clt"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="6c5-UE-u5j">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="968"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yKf-4e-ZsZ">
@@ -3735,7 +3735,7 @@ Linezolid 600 mg IV q12h</string>
                         <viewControllerLayoutGuide type="bottom" id="NFL-il-K38"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Z3v-Se-op8">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="968"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Ny-dK-C2x">
@@ -3794,7 +3794,7 @@ If/when pathogen identified, ABX therapy should be directed to the specific path
                         <viewControllerLayoutGuide type="bottom" id="8d2-jL-LdP"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Cfh-VO-ccu">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="968"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E9j-nL-cUG">
@@ -3860,7 +3860,7 @@ Specifically for hospitalized patients, after 5 days may discontinue antibiotics
                         <viewControllerLayoutGuide type="bottom" id="Vky-Gi-h1w"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="f3C-Wd-uDZ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="968"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="llk-LB-b6t">
@@ -3926,7 +3926,7 @@ Right Diagnosis but Complication
                         <viewControllerLayoutGuide type="bottom" id="lIN-XN-zWW"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="VKj-Ul-WB4">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="968"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cko-h7-fjF">
@@ -6077,12 +6077,12 @@ Alternatives: 2nd or 3rd-generation cephalosporin (cefpodoxime, cefuroxime, cefp
         <simulatedScreenMetrics key="destination" type="retina4_0.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="Jl9-NT-Gne"/>
+        <segue reference="N8I-jK-f8u"/>
+        <segue reference="chB-ht-Thw"/>
         <segue reference="4qU-pU-23B"/>
-        <segue reference="nSS-wO-nBo"/>
-        <segue reference="tyI-tX-lIB"/>
-        <segue reference="aJM-8L-jju"/>
+        <segue reference="Jl9-NT-Gne"/>
         <segue reference="PzY-rh-FR5"/>
-        <segue reference="FiL-Hn-TNG"/>
+        <segue reference="aJM-8L-jju"/>
+        <segue reference="tyI-tX-lIB"/>
     </inferredMetricsTieBreakers>
 </document>
