@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -265,7 +265,7 @@
 				ORGANIZATIONNAME = kangh;
 				TargetAttributes = {
 					68123E1619887D2500280DD6 = {
-						DevelopmentTeam = KU7B7RKFRG;
+						ProvisioningStyle = Manual;
 					};
 					68123E3719887D2500280DD6 = {
 						TestTargetID = 68123E1619887D2500280DD6;
@@ -273,7 +273,7 @@
 				};
 			};
 			buildConfigurationList = 68123E1219887D2400280DD6 /* Build configuration list for PBXProject "Pneumonia" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -466,6 +466,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PreOpEval2/Pneumonia-Prefix.pch";
 				INFOPLIST_FILE = "PreOpEval2/Pneumonia-Info.plist";
@@ -484,6 +485,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PreOpEval2/Pneumonia-Prefix.pch";
 				INFOPLIST_FILE = "PreOpEval2/Pneumonia-Info.plist";
