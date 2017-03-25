@@ -3887,7 +3887,7 @@ Right Diagnosis but Complication
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="YWs-dE-eZL">
                                         <rect key="frame" x="0.0" y="681" width="320" height="455"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <mutableString key="text">IDSA offers criteria to consider for ICU, hospital floor, and outpatient treatment setting.  Then their guidance on severity-of-illness scores and assessment follows.
 
@@ -4368,99 +4368,83 @@ Pneumococcal CAP after influenza virus infection is decreased by immunization ag
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aom-k7-x5J">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9sb-IN-D7f">
+                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9sb-IN-D7f">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                        <subviews>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Which suspected pathogen type will you cover with empiric antibiotics?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="lMa-Xo-Z2P">
-                                                <rect key="frame" x="20" y="14" width="280" height="53"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GAG-Id-Qe6">
-                                                <rect key="frame" x="20" y="75" width="280" height="34"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                <state key="normal" title="Presumed bacterial">
-                                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <segue destination="xdT-tw-X7n" kind="push" id="lHT-cA-GeX"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ae-Hj-oDq">
-                                                <rect key="frame" x="20" y="113" width="280" height="34"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                <state key="normal" title="Presumed viral">
-                                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <segue destination="sBo-sv-M2r" kind="push" id="wFh-3a-e9N"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z5u-9B-30C">
-                                                <rect key="frame" x="20" y="151" width="280" height="34"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                <state key="normal" title="Presumed atypical">
-                                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <segue destination="H7G-nA-MlB" kind="push" id="vJE-Mr-ogz"/>
-                                                </connections>
-                                            </button>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="wordWrap" numberOfLines="34" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="g6v-WB-ZdD">
-                                                <rect key="frame" x="20" y="201" width="280" height="326"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <string key="text">Initial ABX therapy based upon suspected pathogen type which can be surmised by following criteria:
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Which suspected pathogen type will you cover with empiric antibiotics?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="lMa-Xo-Z2P">
+                                        <rect key="frame" x="20" y="14" width="280" height="53"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GAG-Id-Qe6">
+                                        <rect key="frame" x="20" y="75" width="280" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Presumed bacterial">
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="xdT-tw-X7n" kind="push" id="lHT-cA-GeX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ae-Hj-oDq">
+                                        <rect key="frame" x="20" y="113" width="280" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Presumed viral">
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="sBo-sv-M2r" kind="push" id="wFh-3a-e9N"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z5u-9B-30C">
+                                        <rect key="frame" x="20" y="151" width="280" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Presumed atypical">
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="H7G-nA-MlB" kind="push" id="vJE-Mr-ogz"/>
+                                        </connections>
+                                    </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RIh-48-jvj">
+                                        <rect key="frame" x="20" y="193" width="280" height="254"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <mutableString key="text">Initial ABX therapy based upon suspected pathogen type which can be surmised by following criteria:
 - Presumed bacterial: abrupt onset, toxic-looking patient, moderate to severe respiratory distress, high WBC often with predominant neutrophils and/or bands, lobar consolidation on CXR
 - Presumed viral (including influenza): symptoms of URI, patient looks well, probably wheezing, CXR may show perihilar infiltrate and peribronchial thickening, normal or elevated WBC often with predominant lymphocytes
 - Presumed atypical (i.e. mycoplasma): patient looking well, may have antecdent URI symptoms, normal CBC, abnormal CXR with bilateral infiltrates inconsistent with the patient appearance
-(Nelson 2007, see references)</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" red="0.5568627451" green="0.80784313730000001" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="568" id="XW9-6v-4fe"/>
-                                            <constraint firstAttribute="width" constant="320" id="lO7-Sm-g2J"/>
-                                        </constraints>
-                                    </view>
+(Nelson 2007, see references)</mutableString>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="9sb-IN-D7f" firstAttribute="top" secondItem="Aom-k7-x5J" secondAttribute="top" id="6Ig-6L-AUP"/>
-                                    <constraint firstAttribute="width" constant="320" id="7RR-NE-Zy2"/>
-                                    <constraint firstAttribute="height" constant="568" id="AhL-tG-dzB"/>
-                                    <constraint firstAttribute="bottom" secondItem="9sb-IN-D7f" secondAttribute="bottom" id="Ci1-gg-ock"/>
-                                    <constraint firstAttribute="trailing" secondItem="9sb-IN-D7f" secondAttribute="trailing" id="PT4-Po-4Gw"/>
-                                    <constraint firstItem="9sb-IN-D7f" firstAttribute="leading" secondItem="Aom-k7-x5J" secondAttribute="leading" id="ujA-oa-89p"/>
-                                </constraints>
-                            </scrollView>
+                                <color key="backgroundColor" red="0.5568627451" green="0.80784313730000001" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Aom-k7-x5J" firstAttribute="top" secondItem="ae0-HW-q98" secondAttribute="top" id="Ynx-If-6Yc"/>
-                            <constraint firstAttribute="bottom" secondItem="Aom-k7-x5J" secondAttribute="bottom" id="i5i-s6-XaU"/>
-                            <constraint firstAttribute="trailing" secondItem="Aom-k7-x5J" secondAttribute="trailing" id="qyJ-KH-cCA"/>
-                            <constraint firstItem="Aom-k7-x5J" firstAttribute="leading" secondItem="ae0-HW-q98" secondAttribute="leading" id="y10-im-98R"/>
+                            <constraint firstItem="9sb-IN-D7f" firstAttribute="top" secondItem="yDs-ED-1wf" secondAttribute="bottom" id="NbU-P9-hxd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9sb-IN-D7f" secondAttribute="trailing" constant="-16" id="mGH-F1-97K"/>
+                            <constraint firstItem="9sb-IN-D7f" firstAttribute="leading" secondItem="ae0-HW-q98" secondAttribute="leadingMargin" constant="-16" id="mcH-6w-3on"/>
+                            <constraint firstItem="HaC-e6-8ol" firstAttribute="top" secondItem="9sb-IN-D7f" secondAttribute="bottom" id="ypN-kl-Qbg"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Inpatient ABX" id="yQe-M4-Fl6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t9P-G9-nTN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="639" y="5763"/>
+            <point key="canvasLocation" x="538" y="5763"/>
         </scene>
         <!--peds Outpt ABX-->
         <scene sceneID="JWz-yu-iZI">
@@ -4474,92 +4458,76 @@ Pneumococcal CAP after influenza virus infection is decreased by immunization ag
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cTi-g7-m7E">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B1k-4M-qpU">
+                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B1k-4M-qpU">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                        <subviews>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Which suspected pathogen type will you cover with empiric antibiotics?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="qOQ-ub-1O8">
-                                                <rect key="frame" x="20" y="14" width="280" height="53"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mIE-lx-POS">
-                                                <rect key="frame" x="20" y="75" width="280" height="34"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                <state key="normal" title="Presumed bacterial">
-                                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <segue destination="F8b-1l-QGd" kind="push" id="YUk-Pl-DS9"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jIZ-0g-64O">
-                                                <rect key="frame" x="20" y="113" width="280" height="34"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                <state key="normal" title="Presumed viral">
-                                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <segue destination="hTe-5y-xEe" kind="push" id="gpG-Px-pcu"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q1f-ex-Rrk">
-                                                <rect key="frame" x="20" y="151" width="280" height="34"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                <state key="normal" title="Presumed atypical">
-                                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <segue destination="j8d-Py-th0" kind="push" id="irV-CX-Ndt"/>
-                                                </connections>
-                                            </button>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="wordWrap" numberOfLines="34" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="c2s-o9-NbP">
-                                                <rect key="frame" x="20" y="201" width="280" height="326"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <string key="text">Initial ABX therapy based upon suspected pathogen type which can be surmised by following criteria:
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Which suspected pathogen type will you cover with empiric antibiotics?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="qOQ-ub-1O8">
+                                        <rect key="frame" x="20" y="14" width="280" height="53"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mIE-lx-POS">
+                                        <rect key="frame" x="20" y="75" width="280" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Presumed bacterial">
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="F8b-1l-QGd" kind="push" id="YUk-Pl-DS9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jIZ-0g-64O">
+                                        <rect key="frame" x="20" y="113" width="280" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Presumed viral">
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="hTe-5y-xEe" kind="push" id="gpG-Px-pcu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q1f-ex-Rrk">
+                                        <rect key="frame" x="20" y="151" width="280" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Presumed atypical">
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="j8d-Py-th0" kind="push" id="irV-CX-Ndt"/>
+                                        </connections>
+                                    </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hWt-2a-bi9">
+                                        <rect key="frame" x="20" y="193" width="280" height="262"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <mutableString key="text">Initial ABX therapy based upon suspected pathogen type which can be surmised by following criteria:
 - Presumed bacterial: abrupt onset, toxic-looking patient, moderate to severe respiratory distress, high WBC often with predominant neutrophils and/or bands, lobar consolidation on CXR
 - Presumed viral (including influenza): symptoms of URI, patient looks well, probably wheezing, CXR may show perihilar infiltrate and peribronchial thickening, normal or elevated WBC often with predominant lymphocytes
 - Presumed atypical (i.e. mycoplasma): patient looking well, may have antecdent URI symptoms, normal CBC, abnormal CXR with bilateral infiltrates inconsistent with the patient appearance
-(Nelson 2007, see references)</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" red="0.5568627451" green="0.80784313730000001" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="568" id="8Bu-K4-GKi"/>
-                                            <constraint firstAttribute="width" constant="320" id="BQ2-gb-iJZ"/>
-                                        </constraints>
-                                    </view>
+(Nelson 2007, see references)</mutableString>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="B1k-4M-qpU" firstAttribute="leading" secondItem="cTi-g7-m7E" secondAttribute="leading" id="4At-mJ-ZrZ"/>
-                                    <constraint firstAttribute="trailing" secondItem="B1k-4M-qpU" secondAttribute="trailing" id="8Ko-bx-tE0"/>
-                                    <constraint firstItem="B1k-4M-qpU" firstAttribute="top" secondItem="cTi-g7-m7E" secondAttribute="top" id="HRE-Ja-4oA"/>
-                                    <constraint firstAttribute="bottom" secondItem="B1k-4M-qpU" secondAttribute="bottom" id="W61-yV-wbQ"/>
-                                    <constraint firstAttribute="width" constant="320" id="cBA-OK-D7J"/>
-                                    <constraint firstAttribute="height" constant="568" id="gRF-AT-Ye9"/>
-                                </constraints>
-                            </scrollView>
+                                <color key="backgroundColor" red="0.5568627451" green="0.80784313730000001" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="cTi-g7-m7E" secondAttribute="trailing" id="0Qy-rC-OhJ"/>
-                            <constraint firstItem="cTi-g7-m7E" firstAttribute="leading" secondItem="51g-22-4CG" secondAttribute="leading" id="LkQ-qk-pLN"/>
-                            <constraint firstAttribute="bottom" secondItem="cTi-g7-m7E" secondAttribute="bottom" id="bSR-LL-aTC"/>
-                            <constraint firstItem="cTi-g7-m7E" firstAttribute="top" secondItem="51g-22-4CG" secondAttribute="top" id="gC8-94-mMs"/>
+                            <constraint firstItem="B1k-4M-qpU" firstAttribute="top" secondItem="gsE-Ct-j1b" secondAttribute="bottom" id="2fj-K0-OQD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="B1k-4M-qpU" secondAttribute="trailing" constant="-16" id="Pav-3V-uVl"/>
+                            <constraint firstItem="B1k-4M-qpU" firstAttribute="leading" secondItem="51g-22-4CG" secondAttribute="leadingMargin" constant="-16" id="sGE-th-kUb"/>
+                            <constraint firstItem="H7y-AO-hEq" firstAttribute="top" secondItem="B1k-4M-qpU" secondAttribute="bottom" id="w1x-0E-YSH"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Outpatient ABX" id="ulI-wn-RWa"/>
