@@ -457,7 +457,7 @@ The second issue worth noting is that the classic Rochester criteria were not pe
                                         <rect key="frame" x="22" y="81" width="277" height="423"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <mutableString key="text">Hospital Acquired Pneumonia
+                                        <string key="text">Hospital Acquired Pneumonia
 - in hosp for 2+ days within last 90 
   days
 
@@ -483,7 +483,7 @@ Excluded Patients
 - children with chronic lung dz (e.g. 
   cystic fibrosis)
 - children on home mechanical 
-  ventilation</mutableString>
+  ventilation</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -3889,7 +3889,7 @@ Right Diagnosis but Complication
                                         <rect key="frame" x="0.0" y="681" width="320" height="455"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <mutableString key="text">IDSA offers criteria to consider for ICU, hospital floor, and outpatient treatment setting.  Then their guidance on severity-of-illness scores and assessment follows.
+                                        <string key="text">IDSA offers criteria to consider for ICU, hospital floor, and outpatient treatment setting.  Then their guidance on severity-of-illness scores and assessment follows.
 
 Consider admission to ICU under following circumstances:
 
@@ -3916,7 +3916,7 @@ IDSA guideline offers criteria for considering the severity of illness in childr
 
 Major criteria:  invasive mechanical ventilation, fluid refractory shock, acute need for NIPPV, hypoxemia requiring FiO2 greater than inspired concentration or flow feasible in general care area.
 
-Minor criteria:  elevated resp rate by WHO age norms, apnea, increased work of breathing, PaO2/FiO2 ratio &lt;250, multilobar infiltrates, PEWS score &gt;6, altered mental status, hypotension, presence of effusion, comorbid conditions (e.g. HgbSS, immuno-suppression, immuno-deficiency), unexplained metabolic acidosis</mutableString>
+Minor criteria:  elevated resp rate by WHO age norms, apnea, increased work of breathing, PaO2/FiO2 ratio &lt;250, multilobar infiltrates, PEWS score &gt;6, altered mental status, hypotension, presence of effusion, comorbid conditions (e.g. HgbSS, immuno-suppression, immuno-deficiency), unexplained metabolic acidosis</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -4139,7 +4139,7 @@ Infections caused by certain pathogens, notably CA-MRSA, may require longer trea
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="455"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <mutableString key="text">For pediatric pneumonia patients, consider the following before hospital discharge:
+                                        <string key="text">For pediatric pneumonia patients, consider the following before hospital discharge:
 
 - overall clinical improvement, including level of activity, appetite, and decreased fever for at least 12–24 hrs
 - consistent pulse oximetry &gt;90% in room air for at least 12–24 hrs
@@ -4149,7 +4149,7 @@ Infections caused by certain pathogens, notably CA-MRSA, may require longer trea
 Consider delay or deferral of discharge under following circumstances:
 
 - substantially increased work of breathing or sustained tachypnea or tachycardia
-- unaddressed barriers to care, including concern about careful observation at home, inability to comply with therapy, or lack of availability for follow-up</mutableString>
+- unaddressed barriers to care, including concern about careful observation at home, inability to comply with therapy, or lack of availability for follow-up</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -4190,14 +4190,14 @@ Consider delay or deferral of discharge under following circumstances:
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="455"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <mutableString key="text">Children not responding to initial therapy after 48–72 hours may warrant one or more of the following:
+                                        <string key="text">Children not responding to initial therapy after 48–72 hours may warrant one or more of the following:
 
 - clinical and laboratory assessment of the current severity of illness and anticipated progression in order to determine whether higher levels of care or support are required
 - imaging evaluation to assess the extent and progression of the pneumonic or parapneumonic process
 - further investigation to identify whether the original pathogen persists, the original pathogen has developed resistance to the agent used, or there is a new secondary infecting agent
 - bronchoalveolar lavage for gram stain and culture for a mechanically ventilated child
 - percutaneous lung aspirate for gram stain and culture in the persistently and seriously ill child for whom previous investigations have not yielded a microbiologic diagnosis
-- open lung biopsy for gram stain and culture in the persistently and critically ill, mechanically ventilated child in whom previous investigations have not yielded a microbiologic diagnosis</mutableString>
+- open lung biopsy for gram stain and culture in the persistently and critically ill, mechanically ventilated child in whom previous investigations have not yielded a microbiologic diagnosis</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -4238,7 +4238,7 @@ Consider delay or deferral of discharge under following circumstances:
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="455"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <mutableString key="text">The prevention of pneumonia in children focuses mainly but not exclusively on vaccination.  IDSA recommends the following measures.
+                                        <string key="text">The prevention of pneumonia in children focuses mainly but not exclusively on vaccination.  IDSA recommends the following measures.
 
 Children should be immunized with vaccines for bacterial pathogens, including S. pneumoniae, Haemophilus influenzae type b, and Pertussis to prevent community acquired pneumonia (CAP).
 
@@ -4248,7 +4248,7 @@ Parents and caretakers of infants, &lt;6 months of age, including pregnant adole
 
 High-risk infants should be provided immune prophylaxis with respiratory syncytial virus (RSV)–specific monoclonal antibody to decrease the risk of severe pneumonia and hospitalization caused by RSV.
 
-Pneumococcal CAP after influenza virus infection is decreased by immunization against influenza virus.</mutableString>
+Pneumococcal CAP after influenza virus infection is decreased by immunization against influenza virus.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -4420,11 +4420,11 @@ Pneumococcal CAP after influenza virus infection is decreased by immunization ag
                                         <rect key="frame" x="20" y="193" width="280" height="254"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <mutableString key="text">Initial ABX therapy based upon suspected pathogen type which can be surmised by following criteria:
+                                        <string key="text">Initial ABX therapy based upon suspected pathogen type which can be surmised by following criteria:
 - Presumed bacterial: abrupt onset, toxic-looking patient, moderate to severe respiratory distress, high WBC often with predominant neutrophils and/or bands, lobar consolidation on CXR
 - Presumed viral (including influenza): symptoms of URI, patient looks well, probably wheezing, CXR may show perihilar infiltrate and peribronchial thickening, normal or elevated WBC often with predominant lymphocytes
 - Presumed atypical (i.e. mycoplasma): patient looking well, may have antecdent URI symptoms, normal CBC, abnormal CXR with bilateral infiltrates inconsistent with the patient appearance
-(Nelson 2007, see references)</mutableString>
+(Nelson 2007, see references)</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -4510,11 +4510,11 @@ Pneumococcal CAP after influenza virus infection is decreased by immunization ag
                                         <rect key="frame" x="20" y="193" width="280" height="262"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <mutableString key="text">Initial ABX therapy based upon suspected pathogen type which can be surmised by following criteria:
+                                        <string key="text">Initial ABX therapy based upon suspected pathogen type which can be surmised by following criteria:
 - Presumed bacterial: abrupt onset, toxic-looking patient, moderate to severe respiratory distress, high WBC often with predominant neutrophils and/or bands, lobar consolidation on CXR
 - Presumed viral (including influenza): symptoms of URI, patient looks well, probably wheezing, CXR may show perihilar infiltrate and peribronchial thickening, normal or elevated WBC often with predominant lymphocytes
 - Presumed atypical (i.e. mycoplasma): patient looking well, may have antecdent URI symptoms, normal CBC, abnormal CXR with bilateral infiltrates inconsistent with the patient appearance
-(Nelson 2007, see references)</mutableString>
+(Nelson 2007, see references)</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -4960,14 +4960,14 @@ Alternatives: oral clarithromycin (15 mg/kg/day in 2 doses to a maximum of 1 g/d
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NFq-Xz-ed2">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="668"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XFV-F5-gVF">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="668"/>
                                         <subviews>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="dU6-0B-qwb">
                                                 <rect key="frame" x="20" y="14" width="280" height="68"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES"/>
                                                 <string key="text">Choose known pathogen for antibiotic therapy 
 (key ⓢ = sensitive, ⓡ = resistant)</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -4975,7 +4975,7 @@ Alternatives: oral clarithromycin (15 mg/kg/day in 2 doses to a maximum of 1 g/d
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e6D-xQ-bJb">
                                                 <rect key="frame" x="20" y="90" width="280" height="34"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -4988,7 +4988,7 @@ Alternatives: oral clarithromycin (15 mg/kg/day in 2 doses to a maximum of 1 g/d
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5HL-XH-ecG">
                                                 <rect key="frame" x="20" y="128" width="280" height="34"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -5001,7 +5001,7 @@ Alternatives: oral clarithromycin (15 mg/kg/day in 2 doses to a maximum of 1 g/d
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A1Z-sL-fSk">
                                                 <rect key="frame" x="20" y="166" width="280" height="34"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -5014,7 +5014,7 @@ Alternatives: oral clarithromycin (15 mg/kg/day in 2 doses to a maximum of 1 g/d
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qdA-iK-3u6">
                                                 <rect key="frame" x="20" y="204" width="280" height="34"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -5027,7 +5027,7 @@ Alternatives: oral clarithromycin (15 mg/kg/day in 2 doses to a maximum of 1 g/d
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="liZ-K3-vjM">
                                                 <rect key="frame" x="20" y="242" width="280" height="34"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -5040,7 +5040,7 @@ Alternatives: oral clarithromycin (15 mg/kg/day in 2 doses to a maximum of 1 g/d
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D1V-xY-8WO">
                                                 <rect key="frame" x="20" y="280" width="280" height="34"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -5053,7 +5053,7 @@ Alternatives: oral clarithromycin (15 mg/kg/day in 2 doses to a maximum of 1 g/d
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SJh-UO-8ru">
                                                 <rect key="frame" x="20" y="318" width="280" height="34"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -5066,7 +5066,7 @@ Alternatives: oral clarithromycin (15 mg/kg/day in 2 doses to a maximum of 1 g/d
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VUH-vF-tFS">
                                                 <rect key="frame" x="20" y="356" width="280" height="34"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -5079,7 +5079,7 @@ Alternatives: oral clarithromycin (15 mg/kg/day in 2 doses to a maximum of 1 g/d
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GzT-Qy-XvI">
                                                 <rect key="frame" x="20" y="394" width="280" height="34"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -5092,7 +5092,7 @@ Alternatives: oral clarithromycin (15 mg/kg/day in 2 doses to a maximum of 1 g/d
                                             </button>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="wordWrap" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="05y-bc-yLI">
                                                 <rect key="frame" x="20" y="436" width="280" height="146"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES"/>
                                                 <string key="text">If/when the pneumonia infective pathogen becomes known, then narrow and optimize the antibiotic therapy for that pathogen with the regimens suggested.  Preferred and alternative antibiotic recommendations are given for both parenteral therapy and for the oral therapy which might be chosen for step-down therapy or for mild cases at clinician discretion.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                 <nil key="highlightedColor"/>
@@ -5101,15 +5101,12 @@ Alternatives: oral clarithromycin (15 mg/kg/day in 2 doses to a maximum of 1 g/d
                                         <color key="backgroundColor" red="0.5568627451" green="0.80784313730000001" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="668" id="1Qs-L3-dw4"/>
-                                            <constraint firstAttribute="width" constant="320" id="up6-GU-Hqm"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="XFV-F5-gVF" firstAttribute="leading" secondItem="NFq-Xz-ed2" secondAttribute="leading" id="4u8-wr-P17"/>
                                     <constraint firstAttribute="trailing" secondItem="XFV-F5-gVF" secondAttribute="trailing" id="C8V-hq-A9K"/>
-                                    <constraint firstAttribute="height" constant="668" id="PUp-ud-miR"/>
-                                    <constraint firstAttribute="width" constant="320" id="aja-tR-YSw"/>
                                     <constraint firstItem="XFV-F5-gVF" firstAttribute="top" secondItem="NFq-Xz-ed2" secondAttribute="top" id="f6K-pv-23F"/>
                                     <constraint firstAttribute="bottom" secondItem="XFV-F5-gVF" secondAttribute="bottom" id="tuJ-X0-I2d"/>
                                 </constraints>
@@ -5120,6 +5117,7 @@ Alternatives: oral clarithromycin (15 mg/kg/day in 2 doses to a maximum of 1 g/d
                             <constraint firstAttribute="trailing" secondItem="NFq-Xz-ed2" secondAttribute="trailing" id="IPS-ed-S9l"/>
                             <constraint firstItem="NFq-Xz-ed2" firstAttribute="top" secondItem="fj8-Sz-D3d" secondAttribute="top" id="JZH-Gh-Pbr"/>
                             <constraint firstItem="NFq-Xz-ed2" firstAttribute="leading" secondItem="fj8-Sz-D3d" secondAttribute="leading" id="qEG-eH-spD"/>
+                            <constraint firstItem="XFV-F5-gVF" firstAttribute="width" secondItem="fj8-Sz-D3d" secondAttribute="width" id="tQu-or-6BA"/>
                             <constraint firstAttribute="bottom" secondItem="NFq-Xz-ed2" secondAttribute="bottom" id="yNU-cg-uGe"/>
                         </constraints>
                     </view>
@@ -5127,7 +5125,7 @@ Alternatives: oral clarithromycin (15 mg/kg/day in 2 doses to a maximum of 1 g/d
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y5m-kj-Ar2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1491" y="5763"/>
+            <point key="canvasLocation" x="1566" y="5798"/>
         </scene>
         <!--Peds C trach or C pneumo-->
         <scene sceneID="VRA-QO-DMh">
