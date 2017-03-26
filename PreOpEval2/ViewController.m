@@ -29,9 +29,6 @@
     [theAlert show];
 }
 
--(void)test{
-    NSLog(@"This is a test");
-}
 
 - (void)didReceiveMemoryWarning
 {
