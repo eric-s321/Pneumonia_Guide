@@ -1524,7 +1524,7 @@ There are several pneumonia severity scoring schemes developed and evaluated in 
                                         </connections>
                                     </button>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lpg-Y3-yPB">
-                                        <rect key="frame" x="19.5" y="26" width="280.5" height="171"/>
+                                        <rect key="frame" x="20" y="26" width="280" height="171"/>
                                         <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <string key="text">You have specified that illness severity and clinical factors suggest the patient is suitable for initial outpatient treatment.
 
@@ -1909,7 +1909,7 @@ For more topics and guidance on Community Acquired Pneumonia management, choose 
         <!--CAP: outpatient tests-->
         <scene sceneID="Xb6-Ig-HHP">
             <objects>
-                <viewController title="CAP: outpatient tests" id="WcO-cV-5ew" sceneMemberID="viewController">
+                <viewController title="CAP: outpatient tests" automaticallyAdjustsScrollViewInsets="NO" id="WcO-cV-5ew" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wVz-AH-xWL"/>
                         <viewControllerLayoutGuide type="bottom" id="Ux2-dt-ooa"/>
@@ -1918,72 +1918,67 @@ For more topics and guidance on Community Acquired Pneumonia management, choose 
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VVA-YC-CJJ">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jh7-ta-qp5">
+                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jh7-ta-qp5">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                        <subviews>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="wordWrap" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="O2J-pX-4W3">
-                                                <rect key="frame" x="20" y="8" width="280" height="263"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <string key="text">Routine testing to determine the causative organism of community acquired pneumoniamild enough to be treated in the outpatient setting is optional.  Use your knowledge of the patient and your clinical judgment to consider blood and sputum cultures and urinary microbial antigen testing.
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r4K-h3-D9q">
+                                        <rect key="frame" x="20" y="292" width="280" height="34"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="oao-Bi-lk3"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Comm Acq Pneumonia topics">
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="hbR-uI-wa7" kind="push" id="nSS-wO-nBo"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DXo-G1-k8t">
+                                        <rect key="frame" x="20" y="330" width="280" height="21"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Initial antibiotics">
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="Zex-iG-gUf" kind="push" id="Jl9-NT-Gne"/>
+                                        </connections>
+                                    </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jkl-NO-BtX">
+                                        <rect key="frame" x="20" y="8" width="280" height="276"/>
+                                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <string key="text">Routine testing to determine the causative organism of community acquired pneumoniamild enough to be treated in the outpatient setting is optional.  Use your knowledge of the patient and your clinical judgment to consider blood and sputum cultures and urinary microbial antigen testing.
 
 For more topics and guidance on Community Acquired Pneumonia management, choose "Comm Acq Pneumonia topics" button below.</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r4K-h3-D9q">
-                                                <rect key="frame" x="20" y="279" width="280" height="34"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                <state key="normal" title="Comm Acq Pneumonia topics">
-                                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <segue destination="hbR-uI-wa7" kind="push" id="nSS-wO-nBo"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DXo-G1-k8t">
-                                                <rect key="frame" x="20" y="317" width="280" height="34"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                <state key="normal" title="Initial antibiotics">
-                                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <segue destination="Zex-iG-gUf" kind="push" id="Jl9-NT-Gne"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" red="0.5568627451" green="0.80784313730000001" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="320" id="IIB-Hz-oXr"/>
-                                            <constraint firstAttribute="height" constant="568" id="xj3-FQ-7pF"/>
-                                        </constraints>
-                                    </view>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
                                 </subviews>
+                                <color key="backgroundColor" red="0.5568627451" green="0.80784313730000001" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="Jh7-ta-qp5" firstAttribute="top" secondItem="VVA-YC-CJJ" secondAttribute="top" id="1a1-we-MSu"/>
-                                    <constraint firstAttribute="trailing" secondItem="Jh7-ta-qp5" secondAttribute="trailing" id="6wJ-gs-CSg"/>
-                                    <constraint firstItem="Jh7-ta-qp5" firstAttribute="leading" secondItem="VVA-YC-CJJ" secondAttribute="leading" id="QP9-1U-g5H"/>
-                                    <constraint firstAttribute="height" constant="568" id="a4R-Rb-8yX"/>
-                                    <constraint firstAttribute="bottom" secondItem="Jh7-ta-qp5" secondAttribute="bottom" id="izw-c7-w9h"/>
-                                    <constraint firstAttribute="width" constant="320" id="spq-pp-1O2"/>
+                                    <constraint firstItem="DXo-G1-k8t" firstAttribute="top" secondItem="r4K-h3-D9q" secondAttribute="bottom" constant="4" id="06c-bm-tXn"/>
+                                    <constraint firstAttribute="bottom" secondItem="DXo-G1-k8t" secondAttribute="bottom" constant="104" id="0eb-2H-BKz"/>
+                                    <constraint firstAttribute="trailing" secondItem="r4K-h3-D9q" secondAttribute="trailing" constant="20" id="78p-di-rRU"/>
+                                    <constraint firstItem="DXo-G1-k8t" firstAttribute="leading" secondItem="Jh7-ta-qp5" secondAttribute="leading" constant="20" id="9i6-p5-YpE"/>
+                                    <constraint firstAttribute="trailing" secondItem="DXo-G1-k8t" secondAttribute="trailing" constant="20" id="cHL-Fq-uyg"/>
+                                    <constraint firstItem="jkl-NO-BtX" firstAttribute="top" secondItem="Jh7-ta-qp5" secondAttribute="top" constant="8" id="dYB-TM-Lfe"/>
+                                    <constraint firstItem="r4K-h3-D9q" firstAttribute="top" secondItem="jkl-NO-BtX" secondAttribute="bottom" constant="8" id="fbM-BZ-SUy"/>
+                                    <constraint firstItem="r4K-h3-D9q" firstAttribute="leading" secondItem="Jh7-ta-qp5" secondAttribute="leading" constant="20" id="nrM-EC-c4g"/>
+                                    <constraint firstAttribute="trailing" secondItem="jkl-NO-BtX" secondAttribute="trailing" constant="20" id="rhM-Nk-l2o"/>
+                                    <constraint firstItem="jkl-NO-BtX" firstAttribute="leading" secondItem="Jh7-ta-qp5" secondAttribute="leading" constant="20" id="tTw-08-sdN"/>
                                 </constraints>
-                            </scrollView>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.5568627451" green="0.80784313730000001" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="VVA-YC-CJJ" firstAttribute="leading" secondItem="KNZ-cw-8Me" secondAttribute="leading" id="ALb-4l-s3U"/>
-                            <constraint firstItem="VVA-YC-CJJ" firstAttribute="top" secondItem="KNZ-cw-8Me" secondAttribute="top" id="BJ8-7E-HVa"/>
-                            <constraint firstAttribute="trailing" secondItem="VVA-YC-CJJ" secondAttribute="trailing" id="LgQ-Cn-Nwt"/>
-                            <constraint firstAttribute="bottom" secondItem="VVA-YC-CJJ" secondAttribute="bottom" id="cHc-cy-wEs"/>
+                            <constraint firstItem="Jh7-ta-qp5" firstAttribute="leading" secondItem="KNZ-cw-8Me" secondAttribute="leadingMargin" constant="-16" id="JYC-34-Fy1"/>
+                            <constraint firstItem="Jh7-ta-qp5" firstAttribute="top" secondItem="wVz-AH-xWL" secondAttribute="bottom" id="X8n-KG-tnh"/>
+                            <constraint firstItem="Ux2-dt-ooa" firstAttribute="top" secondItem="Jh7-ta-qp5" secondAttribute="bottom" id="f9v-xD-gwq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Jh7-ta-qp5" secondAttribute="trailing" constant="-16" id="v7I-3O-prX"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Outpatient tests" id="jQ1-MT-82F"/>
@@ -1997,7 +1992,7 @@ For more topics and guidance on Community Acquired Pneumonia management, choose 
         <!--CAP: inpatient tests PIC-->
         <scene sceneID="8qW-D3-Aom">
             <objects>
-                <viewController title="CAP: inpatient tests PIC" id="Gto-CI-jrp" userLabel="CAP: inpatient tests PIC" sceneMemberID="viewController">
+                <viewController title="CAP: inpatient tests PIC" automaticallyAdjustsScrollViewInsets="NO" id="Gto-CI-jrp" userLabel="CAP: inpatient tests PIC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JXV-n3-KRj"/>
                         <viewControllerLayoutGuide type="bottom" id="jq8-Tb-1YU"/>
@@ -2007,14 +2002,14 @@ For more topics and guidance on Community Acquired Pneumonia management, choose 
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JMy-n8-rTy">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="968"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DaL-sG-1eK">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="968"/>
                                         <subviews>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="wordWrap" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="hFm-mq-XCI">
                                                 <rect key="frame" x="20" y="14" width="280" height="134"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES"/>
                                                 <string key="text">12 clinical indications identify inpatients who warrant further diagnostic testing with Blood Cx, Sputum Cx, Legionella urine Ag, Pneumococcal urine Ag, and certain additional tests.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2022,11 +2017,11 @@ For more topics and guidance on Community Acquired Pneumonia management, choose 
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="inpt dx tests table copy.png" translatesAutoresizingMaskIntoConstraints="NO" id="XVP-wf-Rd5">
                                                 <rect key="frame" x="10" y="156" width="300" height="430"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="wordWrap" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="6jq-8M-mj7">
                                                 <rect key="frame" x="20" y="594" width="280" height="92"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES"/>
                                                 <string key="text">For more topics and guidance on Community Acquired Pneumonia management, choose "go to CAP topics" or "Initial antibiotics" button.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2034,7 +2029,7 @@ For more topics and guidance on Community Acquired Pneumonia management, choose 
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VQB-oY-xpH">
                                                 <rect key="frame" x="20" y="694" width="280" height="34"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -2047,7 +2042,7 @@ For more topics and guidance on Community Acquired Pneumonia management, choose 
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zfP-yz-bHe">
                                                 <rect key="frame" x="20" y="732" width="280" height="34"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -2061,27 +2056,25 @@ For more topics and guidance on Community Acquired Pneumonia management, choose 
                                         </subviews>
                                         <color key="backgroundColor" red="0.5568627451" green="0.80784313730000001" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="320" id="aeY-Rn-Tjj"/>
                                             <constraint firstAttribute="height" constant="968" id="vmE-kW-lGh"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="DaL-sG-1eK" secondAttribute="bottom" id="5fl-Vu-xDJ"/>
-                                    <constraint firstAttribute="trailing" secondItem="DaL-sG-1eK" secondAttribute="trailing" id="BRs-5x-Pp4"/>
-                                    <constraint firstItem="DaL-sG-1eK" firstAttribute="leading" secondItem="JMy-n8-rTy" secondAttribute="leading" id="VLA-CJ-ubI"/>
-                                    <constraint firstAttribute="width" constant="320" id="Vd3-M1-tUa"/>
-                                    <constraint firstItem="DaL-sG-1eK" firstAttribute="top" secondItem="JMy-n8-rTy" secondAttribute="top" id="nzx-ll-4lB"/>
-                                    <constraint firstAttribute="height" constant="968" id="wkD-vR-EBq"/>
+                                    <constraint firstAttribute="bottom" secondItem="DaL-sG-1eK" secondAttribute="bottom" constant="-501" id="DtG-vb-axB"/>
+                                    <constraint firstItem="DaL-sG-1eK" firstAttribute="top" secondItem="JMy-n8-rTy" secondAttribute="top" id="en7-bW-mBW"/>
+                                    <constraint firstAttribute="trailing" secondItem="DaL-sG-1eK" secondAttribute="trailing" id="mte-S7-ttO"/>
+                                    <constraint firstItem="DaL-sG-1eK" firstAttribute="leading" secondItem="JMy-n8-rTy" secondAttribute="leading" id="s8y-uq-8Dy"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.5568627451" green="0.80784313730000001" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="JMy-n8-rTy" secondAttribute="bottom" id="074-zL-3BU"/>
-                            <constraint firstItem="JMy-n8-rTy" firstAttribute="top" secondItem="S25-lX-dEl" secondAttribute="top" id="2cg-3T-eJX"/>
-                            <constraint firstAttribute="trailing" secondItem="JMy-n8-rTy" secondAttribute="trailing" id="W2L-0O-7SW"/>
-                            <constraint firstItem="JMy-n8-rTy" firstAttribute="leading" secondItem="S25-lX-dEl" secondAttribute="leading" id="pub-qr-rra"/>
+                            <constraint firstItem="JMy-n8-rTy" firstAttribute="leading" secondItem="S25-lX-dEl" secondAttribute="leadingMargin" constant="-16" id="Lxz-Gi-EBM"/>
+                            <constraint firstItem="DaL-sG-1eK" firstAttribute="width" secondItem="S25-lX-dEl" secondAttribute="width" id="fQ3-v8-QIM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JMy-n8-rTy" secondAttribute="trailing" constant="-16" id="fRg-YL-ad5"/>
+                            <constraint firstItem="jq8-Tb-1YU" firstAttribute="top" secondItem="JMy-n8-rTy" secondAttribute="bottom" id="tzs-FV-Cnx"/>
+                            <constraint firstItem="JMy-n8-rTy" firstAttribute="top" secondItem="JXV-n3-KRj" secondAttribute="bottom" id="yHI-0c-0A0"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Inpatient tests" id="6No-Mp-uMs" userLabel="Inpatient tests"/>
@@ -2095,7 +2088,7 @@ For more topics and guidance on Community Acquired Pneumonia management, choose 
         <!--CAP intial ABX-->
         <scene sceneID="KI2-tl-eIu">
             <objects>
-                <viewController title="CAP intial ABX" id="Zex-iG-gUf" sceneMemberID="viewController">
+                <viewController title="CAP intial ABX" automaticallyAdjustsScrollViewInsets="NO" id="Zex-iG-gUf" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qDW-YQ-wxh"/>
                         <viewControllerLayoutGuide type="bottom" id="aVL-e9-DvZ"/>
@@ -2104,87 +2097,92 @@ For more topics and guidance on Community Acquired Pneumonia management, choose 
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yXt-SY-6S5">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MSa-Iw-Fwg">
+                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MSa-Iw-Fwg">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                        <subviews>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Review the initial antibiotics recommended for patients with Community Acquired Pneumonia based upon initial treatment setting" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="G8G-pV-yLZ">
-                                                <rect key="frame" x="20" y="14" width="280" height="85"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rtg-u7-gpR">
-                                                <rect key="frame" x="20" y="107" width="280" height="34"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                <state key="normal" title="Outpatient">
-                                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <segue destination="syY-2M-v0Z" kind="push" id="5ee-Zx-8tW"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sNh-8I-cKN">
-                                                <rect key="frame" x="20" y="145" width="280" height="34"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                <state key="normal" title="Hospital floor">
-                                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <segue destination="Yye-bf-erO" kind="push" id="e1z-xG-KHV"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Si-qi-iG6">
-                                                <rect key="frame" x="20" y="183" width="280" height="34"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                <state key="normal" title="Intensive care unit (ICU)">
-                                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <segue destination="WWy-jN-hCK" kind="push" id="XmM-DU-ogP"/>
-                                                </connections>
-                                            </button>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Treatment setting and questions about the risk of drug-resistant pathogens will guide antibiotic recommendations." lineBreakMode="wordWrap" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="7G8-VE-8oh">
-                                                <rect key="frame" x="20" y="225" width="280" height="57"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" red="0.5568627451" green="0.80784313730000001" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Review the initial antibiotics recommended for patients with Community Acquired Pneumonia based upon initial treatment setting" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Zu8-KU-181">
+                                        <rect key="frame" x="20" y="19" width="280" height="156"/>
+                                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rtg-u7-gpR">
+                                        <rect key="frame" x="20" y="183" width="280" height="34"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="320" id="7LE-Sw-riI"/>
-                                            <constraint firstAttribute="height" constant="568" id="goT-z2-GpP"/>
+                                            <constraint firstAttribute="height" constant="34" id="49c-k4-ghu"/>
                                         </constraints>
-                                    </view>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Outpatient">
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="syY-2M-v0Z" kind="push" id="5ee-Zx-8tW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sNh-8I-cKN">
+                                        <rect key="frame" x="20" y="221" width="280" height="34"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="0G1-uj-erY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Hospital floor">
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="Yye-bf-erO" kind="push" id="e1z-xG-KHV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Si-qi-iG6">
+                                        <rect key="frame" x="20" y="259" width="280" height="34"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Intensive care unit (ICU)">
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="WWy-jN-hCK" kind="push" id="XmM-DU-ogP"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Treatment setting and questions about the risk of drug-resistant pathogens will guide antibiotic recommendations." lineBreakMode="wordWrap" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="7G8-VE-8oh">
+                                        <rect key="frame" x="20" y="301" width="280" height="47"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
+                                <color key="backgroundColor" red="0.5568627451" green="0.80784313730000001" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="MSa-Iw-Fwg" secondAttribute="bottom" id="7rc-T1-Wdd"/>
-                                    <constraint firstItem="MSa-Iw-Fwg" firstAttribute="top" secondItem="yXt-SY-6S5" secondAttribute="top" id="8fu-q8-YGK"/>
-                                    <constraint firstItem="MSa-Iw-Fwg" firstAttribute="leading" secondItem="yXt-SY-6S5" secondAttribute="leading" id="A4G-CZ-17U"/>
-                                    <constraint firstAttribute="height" constant="568" id="hdk-BI-X3t"/>
-                                    <constraint firstAttribute="trailing" secondItem="MSa-Iw-Fwg" secondAttribute="trailing" id="nbU-RQ-aXP"/>
-                                    <constraint firstAttribute="width" constant="320" id="wxa-Dh-8WM"/>
+                                    <constraint firstItem="sNh-8I-cKN" firstAttribute="top" secondItem="Rtg-u7-gpR" secondAttribute="bottom" constant="4" id="3cR-Kn-fp7"/>
+                                    <constraint firstItem="3Si-qi-iG6" firstAttribute="leading" secondItem="MSa-Iw-Fwg" secondAttribute="leading" constant="20" id="3hz-VY-Eo7"/>
+                                    <constraint firstAttribute="trailing" secondItem="sNh-8I-cKN" secondAttribute="trailing" constant="20" id="6dF-pQ-hUY"/>
+                                    <constraint firstAttribute="trailing" secondItem="3Si-qi-iG6" secondAttribute="trailing" constant="20" id="74V-d9-q7x"/>
+                                    <constraint firstAttribute="bottom" secondItem="7G8-VE-8oh" secondAttribute="bottom" constant="107" id="BMS-0W-5XZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="Zu8-KU-181" secondAttribute="trailing" constant="20" id="Bk6-pK-cJ3"/>
+                                    <constraint firstAttribute="trailing" secondItem="Rtg-u7-gpR" secondAttribute="trailing" constant="20" id="Dr5-m3-9b6"/>
+                                    <constraint firstItem="7G8-VE-8oh" firstAttribute="top" secondItem="3Si-qi-iG6" secondAttribute="bottom" constant="8" id="JQR-Rz-bN3"/>
+                                    <constraint firstItem="7G8-VE-8oh" firstAttribute="leading" secondItem="MSa-Iw-Fwg" secondAttribute="leading" constant="20" id="MIK-fe-TLi"/>
+                                    <constraint firstItem="Rtg-u7-gpR" firstAttribute="leading" secondItem="MSa-Iw-Fwg" secondAttribute="leading" constant="20" id="Ofg-5t-hWi"/>
+                                    <constraint firstItem="Zu8-KU-181" firstAttribute="top" secondItem="MSa-Iw-Fwg" secondAttribute="top" constant="19" id="XFx-YZ-64x"/>
+                                    <constraint firstItem="Rtg-u7-gpR" firstAttribute="height" secondItem="sNh-8I-cKN" secondAttribute="height" id="dvh-2S-CE6"/>
+                                    <constraint firstItem="sNh-8I-cKN" firstAttribute="leading" secondItem="MSa-Iw-Fwg" secondAttribute="leading" constant="20" id="flP-oE-oN7"/>
+                                    <constraint firstItem="Rtg-u7-gpR" firstAttribute="top" secondItem="Zu8-KU-181" secondAttribute="bottom" constant="8" id="g23-sX-KeN"/>
+                                    <constraint firstItem="3Si-qi-iG6" firstAttribute="top" secondItem="sNh-8I-cKN" secondAttribute="bottom" constant="4" id="g8w-XA-gee"/>
+                                    <constraint firstItem="Zu8-KU-181" firstAttribute="leading" secondItem="MSa-Iw-Fwg" secondAttribute="leading" constant="20" id="r7l-FR-ouA"/>
+                                    <constraint firstAttribute="trailing" secondItem="7G8-VE-8oh" secondAttribute="trailing" constant="20" id="uLU-0U-mg8"/>
+                                    <constraint firstItem="sNh-8I-cKN" firstAttribute="height" secondItem="3Si-qi-iG6" secondAttribute="height" id="vw6-h2-PRt"/>
                                 </constraints>
-                            </scrollView>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="yXt-SY-6S5" firstAttribute="leading" secondItem="U72-am-Jkf" secondAttribute="leading" id="9Gl-ef-G7w"/>
-                            <constraint firstItem="yXt-SY-6S5" firstAttribute="top" secondItem="U72-am-Jkf" secondAttribute="top" id="V9S-05-7x2"/>
-                            <constraint firstAttribute="trailing" secondItem="yXt-SY-6S5" secondAttribute="trailing" id="ba2-C8-FJy"/>
-                            <constraint firstAttribute="bottom" secondItem="yXt-SY-6S5" secondAttribute="bottom" id="y4b-tc-vfH"/>
+                            <constraint firstItem="MSa-Iw-Fwg" firstAttribute="leading" secondItem="U72-am-Jkf" secondAttribute="leadingMargin" constant="-16" id="2QM-ra-aqi"/>
+                            <constraint firstItem="MSa-Iw-Fwg" firstAttribute="top" secondItem="qDW-YQ-wxh" secondAttribute="bottom" id="Pmo-bp-L46"/>
+                            <constraint firstItem="aVL-e9-DvZ" firstAttribute="top" secondItem="MSa-Iw-Fwg" secondAttribute="bottom" id="XEd-hI-CdK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MSa-Iw-Fwg" secondAttribute="trailing" constant="-16" id="bFM-ip-Lpo"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Initial antibiotics" id="CKm-cR-sA6"/>
@@ -2198,7 +2196,7 @@ For more topics and guidance on Community Acquired Pneumonia management, choose 
         <!--CAP outpt ABX-->
         <scene sceneID="JKi-xv-hWx">
             <objects>
-                <viewController title="CAP outpt ABX" id="syY-2M-v0Z" sceneMemberID="viewController">
+                <viewController title="CAP outpt ABX" automaticallyAdjustsScrollViewInsets="NO" id="syY-2M-v0Z" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1zg-9h-g01"/>
                         <viewControllerLayoutGuide type="bottom" id="bYa-eh-hJU"/>
@@ -2207,80 +2205,64 @@ For more topics and guidance on Community Acquired Pneumonia management, choose 
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e3J-ph-Niq">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r1i-ME-iIw">
+                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r1i-ME-iIw">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                        <subviews>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Does this outpatient CAP pt have a risk of drug resistant Strep Pneumo?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="gce-uB-b0p">
-                                                <rect key="frame" x="20" y="14" width="280" height="49"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l9E-SQ-wsY">
-                                                <rect key="frame" x="20" y="71" width="280" height="34"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                <state key="normal" title="Yes">
-                                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <segue destination="HtU-nx-0gw" kind="push" id="ZZJ-ha-t5d"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ImA-nb-agD">
-                                                <rect key="frame" x="20" y="109" width="280" height="34"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                <state key="normal" title="No">
-                                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <segue destination="JwG-77-bdA" kind="push" id="uHc-rg-ErR"/>
-                                                </connections>
-                                            </button>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="wordWrap" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="QcF-6y-M4L">
-                                                <rect key="frame" x="20" y="151" width="280" height="149"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <string key="text">Risk for drug resistant Strep Pneumo influences antibiotic choice.  Patient has risk of resistant Strep Pneumo with any of the following risk factors:
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Does this outpatient CAP pt have a risk of drug resistant Strep Pneumo?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="gce-uB-b0p">
+                                        <rect key="frame" x="20" y="14" width="280" height="49"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l9E-SQ-wsY">
+                                        <rect key="frame" x="20" y="71" width="280" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Yes">
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="HtU-nx-0gw" kind="push" id="ZZJ-ha-t5d"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ImA-nb-agD">
+                                        <rect key="frame" x="20" y="109" width="280" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="No">
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="JwG-77-bdA" kind="push" id="uHc-rg-ErR"/>
+                                        </connections>
+                                    </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kWW-Wn-13T">
+                                        <rect key="frame" x="20" y="163" width="280" height="284"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <string key="text">Risk for drug resistant Strep Pneumo influences antibiotic choice.  Patient has risk of resistant Strep Pneumo with any of the following risk factors:
 - any ABX within 3 months
 - comorbidities: cardiac dz, diabetes,  
   alcoholism, lung dz, renal dz, liver dz, 
   asplenia, cancer, immunosuppression
 - age &gt; 65 yrs</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" red="0.5568627451" green="0.80784313730000001" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="320" id="C3J-yI-Zzv"/>
-                                            <constraint firstAttribute="height" constant="568" id="FjK-50-MZP"/>
-                                        </constraints>
-                                    </view>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="320" id="0Fe-3N-3jp"/>
-                                    <constraint firstAttribute="height" constant="568" id="BaQ-Wo-6g4"/>
-                                    <constraint firstAttribute="trailing" secondItem="r1i-ME-iIw" secondAttribute="trailing" id="DvZ-Vi-wAs"/>
-                                    <constraint firstItem="r1i-ME-iIw" firstAttribute="leading" secondItem="e3J-ph-Niq" secondAttribute="leading" id="FB7-un-v9O"/>
-                                    <constraint firstAttribute="bottom" secondItem="r1i-ME-iIw" secondAttribute="bottom" id="c5h-Ka-0yP"/>
-                                    <constraint firstItem="r1i-ME-iIw" firstAttribute="top" secondItem="e3J-ph-Niq" secondAttribute="top" id="hpa-6r-7sm"/>
-                                </constraints>
-                            </scrollView>
+                                <color key="backgroundColor" red="0.5568627451" green="0.80784313730000001" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="e3J-ph-Niq" secondAttribute="bottom" id="7yA-yb-0Hd"/>
-                            <constraint firstItem="e3J-ph-Niq" firstAttribute="leading" secondItem="Me3-ql-rir" secondAttribute="leading" id="kXa-06-cLb"/>
-                            <constraint firstAttribute="trailing" secondItem="e3J-ph-Niq" secondAttribute="trailing" id="pjk-Lo-Y9W"/>
-                            <constraint firstItem="e3J-ph-Niq" firstAttribute="top" secondItem="Me3-ql-rir" secondAttribute="top" id="wMh-lU-Gfk"/>
+                            <constraint firstItem="r1i-ME-iIw" firstAttribute="top" secondItem="1zg-9h-g01" secondAttribute="bottom" id="GWK-Oz-ajg"/>
+                            <constraint firstItem="r1i-ME-iIw" firstAttribute="leading" secondItem="Me3-ql-rir" secondAttribute="leadingMargin" constant="-16" id="KGw-Qc-0RR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="r1i-ME-iIw" secondAttribute="trailing" constant="-16" id="Onv-6A-QiF"/>
+                            <constraint firstItem="bYa-eh-hJU" firstAttribute="top" secondItem="r1i-ME-iIw" secondAttribute="bottom" id="Z3Q-az-4Qj"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="resistant Strep?" id="Rkm-wM-cWo"/>
@@ -2294,7 +2276,7 @@ For more topics and guidance on Community Acquired Pneumonia management, choose 
         <!--CAP outpt ABX DR strep-->
         <scene sceneID="utc-0l-xkh">
             <objects>
-                <viewController title="CAP outpt ABX DR strep" id="HtU-nx-0gw" userLabel="CAP outpt ABX DR strep" sceneMemberID="viewController">
+                <viewController title="CAP outpt ABX DR strep" automaticallyAdjustsScrollViewInsets="NO" id="HtU-nx-0gw" userLabel="CAP outpt ABX DR strep" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dQQ-dP-AL7"/>
                         <viewControllerLayoutGuide type="bottom" id="MhB-c7-omF"/>
@@ -2303,84 +2285,84 @@ For more topics and guidance on Community Acquired Pneumonia management, choose 
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="35z-jf-Wt2">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8rC-3s-did">
+                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8rC-3s-did">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                        <subviews>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="25" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="Hrx-SQ-Hnx">
-                                                <rect key="frame" x="20" y="14" width="280" height="450"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <string key="text">Outpatient CAP patient with risk of resistant strep pneumo.  You may begin tx with
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7DV-8T-laq">
+                                        <rect key="frame" x="8" y="8" width="304" height="332"/>
+                                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <string key="text">Outpatient CAP patient with risk of resistant strep pneumo.  You may begin tx with
 
-    Resp Fluoroquin alone (levo, moxi)
+Resp Fluoroquin alone (levo, moxi)
 
-                       -- OR --
+-- OR --
 
-             B-lactam plus Macrolide
-Amox 1g TID                   Azithromycin
-Amox-clav 2g BID              Doxy less-
-Ceftriaxone                            preferred
+B-lactam plus Macrolide
+Amox 1g TID Azithromycin Doxy less-
+Amox-clav 2g BID
+Ceftriaxone
+preferred
 Cefpodoxime
 Cefuroxime
 
 Duration at least 5 days.
 
 For more topics and guidance on Community Acquired Pneumonia management, choose from items below</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2jT-3K-i0A">
-                                                <rect key="frame" x="20" y="472" width="280" height="34"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                <state key="normal" title="ⓘ likely pathogens">
-                                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <segue destination="sJf-uR-YST" kind="push" id="aJM-8L-jju"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="98a-0d-wOY">
-                                                <rect key="frame" x="20" y="510" width="280" height="34"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                <state key="normal" title="Comm Acq Pneumonia topics">
-                                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <segue destination="hbR-uI-wa7" kind="push" id="PhR-83-JV5"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" red="0.5568627451" green="0.80784313730000001" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2jT-3K-i0A">
+                                        <rect key="frame" x="20" y="401" width="280" height="34"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="320" id="1Wv-uR-fLp"/>
-                                            <constraint firstAttribute="height" constant="568" id="KDz-9U-FNQ"/>
+                                            <constraint firstAttribute="height" constant="34" id="IhA-LB-TtE"/>
                                         </constraints>
-                                    </view>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="ⓘ likely pathogens">
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="sJf-uR-YST" kind="push" id="aJM-8L-jju"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="98a-0d-wOY">
+                                        <rect key="frame" x="20" y="359" width="280" height="34"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="hzf-vd-6LI"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Comm Acq Pneumonia topics">
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="hbR-uI-wa7" kind="push" id="PhR-83-JV5"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
+                                <color key="backgroundColor" red="0.5568627451" green="0.80784313730000001" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="8rC-3s-did" secondAttribute="trailing" id="BTh-ie-RYC"/>
-                                    <constraint firstItem="8rC-3s-did" firstAttribute="leading" secondItem="35z-jf-Wt2" secondAttribute="leading" id="aj1-Am-rt2"/>
-                                    <constraint firstAttribute="height" constant="568" id="jSH-Va-l0O"/>
-                                    <constraint firstAttribute="width" constant="320" id="mmL-qi-WPh"/>
-                                    <constraint firstAttribute="bottom" secondItem="8rC-3s-did" secondAttribute="bottom" id="tSr-Ew-jXe"/>
-                                    <constraint firstItem="8rC-3s-did" firstAttribute="top" secondItem="35z-jf-Wt2" secondAttribute="top" id="yE7-kO-Vkb"/>
+                                    <constraint firstAttribute="bottom" secondItem="2jT-3K-i0A" secondAttribute="bottom" constant="20" id="2He-GB-j9S"/>
+                                    <constraint firstItem="98a-0d-wOY" firstAttribute="top" secondItem="7DV-8T-laq" secondAttribute="bottom" constant="19" id="90s-71-hca"/>
+                                    <constraint firstAttribute="trailing" secondItem="98a-0d-wOY" secondAttribute="trailing" constant="20" id="Gjc-tj-dcO"/>
+                                    <constraint firstAttribute="trailing" secondItem="2jT-3K-i0A" secondAttribute="trailing" constant="20" id="Mcb-sE-5MW"/>
+                                    <constraint firstAttribute="trailing" secondItem="7DV-8T-laq" secondAttribute="trailing" constant="8" id="fp3-9Q-hdf"/>
+                                    <constraint firstItem="7DV-8T-laq" firstAttribute="top" secondItem="8rC-3s-did" secondAttribute="top" constant="8" id="g9S-C0-jPy"/>
+                                    <constraint firstItem="98a-0d-wOY" firstAttribute="leading" secondItem="8rC-3s-did" secondAttribute="leading" constant="20" id="hGm-hn-CpP"/>
+                                    <constraint firstItem="2jT-3K-i0A" firstAttribute="top" secondItem="98a-0d-wOY" secondAttribute="bottom" constant="8" id="iki-Vz-tdY"/>
+                                    <constraint firstItem="7DV-8T-laq" firstAttribute="leading" secondItem="8rC-3s-did" secondAttribute="leading" constant="8" id="lMr-PH-PH4"/>
+                                    <constraint firstItem="2jT-3K-i0A" firstAttribute="leading" secondItem="8rC-3s-did" secondAttribute="leading" constant="20" id="rzn-by-L73"/>
                                 </constraints>
-                            </scrollView>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="35z-jf-Wt2" secondAttribute="trailing" id="Gyl-3J-I82"/>
-                            <constraint firstAttribute="bottom" secondItem="35z-jf-Wt2" secondAttribute="bottom" id="LYc-Y1-0iw"/>
-                            <constraint firstItem="35z-jf-Wt2" firstAttribute="leading" secondItem="SWg-Uq-hm2" secondAttribute="leading" id="rOV-Ry-JIY"/>
-                            <constraint firstItem="35z-jf-Wt2" firstAttribute="top" secondItem="SWg-Uq-hm2" secondAttribute="top" id="u73-JX-2f2"/>
+                            <constraint firstItem="8rC-3s-did" firstAttribute="leading" secondItem="SWg-Uq-hm2" secondAttribute="leadingMargin" constant="-16" id="0uE-lv-uiY"/>
+                            <constraint firstItem="MhB-c7-omF" firstAttribute="top" secondItem="8rC-3s-did" secondAttribute="bottom" id="Mk2-YK-6dW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8rC-3s-did" secondAttribute="trailing" constant="-16" id="mCl-yX-Pga"/>
+                            <constraint firstItem="8rC-3s-did" firstAttribute="top" secondItem="dQQ-dP-AL7" secondAttribute="bottom" id="zkQ-c9-zSk"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Initial antibiotics" id="3dp-TV-Tsv"/>
@@ -2403,77 +2385,73 @@ For more topics and guidance on Community Acquired Pneumonia management, choose 
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oxe-rm-n39">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mvn-Iu-mzz">
+                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mvn-Iu-mzz">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                        <subviews>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="25" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="fO0-lV-1CM">
-                                                <rect key="frame" x="20" y="14" width="280" height="290"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <string key="text">Outpatient CAP patient without risk of resistant strep pneumo.  You may begin tx with
-
-                      Macrolide
-           (erythro, azithro, clarithro)
-       Doxy less preferred alternative
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kCP-yd-JIa">
+                                        <rect key="frame" x="20" y="8" width="280" height="333"/>
+                                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <string key="text">Outpatient CAP patient without risk of resistant strep pneumo.  You may begin tx with
+ Macrolide
+(erythro, azithro, clarithro)
+Doxy less preferred alternative
 
 Duration at least 5 days.
 
 For more topics and guidance on Community Acquired Pneumonia management, choose from items below</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B8i-50-fpE">
-                                                <rect key="frame" x="20" y="312" width="280" height="34"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                <state key="normal" title="ⓘ likely pathogens">
-                                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <segue destination="sJf-uR-YST" kind="push" id="uvQ-J3-tZx"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i1J-Fl-cMS">
-                                                <rect key="frame" x="20" y="350" width="280" height="34"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                <state key="normal" title="Comm Acq Pneumonia topics">
-                                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <segue destination="hbR-uI-wa7" kind="push" id="a5E-3Y-Pqa"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" red="0.5568627451" green="0.80784313730000001" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B8i-50-fpE">
+                                        <rect key="frame" x="20" y="362" width="280" height="34"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="568" id="MoL-8o-BRQ"/>
-                                            <constraint firstAttribute="width" constant="320" id="nAa-Ur-LV9"/>
+                                            <constraint firstAttribute="height" constant="34" id="ldd-k2-26v"/>
                                         </constraints>
-                                    </view>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="ⓘ likely pathogens">
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="sJf-uR-YST" kind="push" id="uvQ-J3-tZx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i1J-Fl-cMS">
+                                        <rect key="frame" x="20" y="400" width="280" height="34"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Comm Acq Pneumonia topics">
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="hbR-uI-wa7" kind="push" id="a5E-3Y-Pqa"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
+                                <color key="backgroundColor" red="0.5568627451" green="0.80784313730000001" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="568" id="5Xs-kY-e8l"/>
-                                    <constraint firstAttribute="trailing" secondItem="Mvn-Iu-mzz" secondAttribute="trailing" id="MQD-by-VNf"/>
-                                    <constraint firstAttribute="width" constant="320" id="Mwm-JH-4ua"/>
-                                    <constraint firstItem="Mvn-Iu-mzz" firstAttribute="top" secondItem="oxe-rm-n39" secondAttribute="top" id="YPP-g0-HmT"/>
-                                    <constraint firstItem="Mvn-Iu-mzz" firstAttribute="leading" secondItem="oxe-rm-n39" secondAttribute="leading" id="mO0-V0-3h5"/>
-                                    <constraint firstAttribute="bottom" secondItem="Mvn-Iu-mzz" secondAttribute="bottom" id="wcq-x8-kWv"/>
+                                    <constraint firstAttribute="trailing" secondItem="kCP-yd-JIa" secondAttribute="trailing" constant="20" id="4LD-7S-Jbr"/>
+                                    <constraint firstAttribute="bottom" secondItem="i1J-Fl-cMS" secondAttribute="bottom" constant="21" id="8QG-x0-rLm"/>
+                                    <constraint firstItem="i1J-Fl-cMS" firstAttribute="top" secondItem="B8i-50-fpE" secondAttribute="bottom" constant="4" id="8o2-E6-UAS"/>
+                                    <constraint firstItem="kCP-yd-JIa" firstAttribute="top" secondItem="Mvn-Iu-mzz" secondAttribute="top" constant="8" id="Oa5-4a-BSi"/>
+                                    <constraint firstAttribute="trailing" secondItem="i1J-Fl-cMS" secondAttribute="trailing" constant="20" id="PJ7-Dz-fTL"/>
+                                    <constraint firstItem="B8i-50-fpE" firstAttribute="leading" secondItem="Mvn-Iu-mzz" secondAttribute="leading" constant="20" id="RX2-eG-Zuz"/>
+                                    <constraint firstItem="i1J-Fl-cMS" firstAttribute="leading" secondItem="Mvn-Iu-mzz" secondAttribute="leading" constant="20" id="SF2-Yp-Lkw"/>
+                                    <constraint firstAttribute="trailing" secondItem="B8i-50-fpE" secondAttribute="trailing" constant="20" id="esV-vU-ffT"/>
+                                    <constraint firstItem="i1J-Fl-cMS" firstAttribute="height" secondItem="B8i-50-fpE" secondAttribute="height" id="jAP-IF-RTY"/>
+                                    <constraint firstItem="kCP-yd-JIa" firstAttribute="leading" secondItem="Mvn-Iu-mzz" secondAttribute="leading" constant="20" id="jaY-LN-UG0"/>
+                                    <constraint firstItem="B8i-50-fpE" firstAttribute="top" secondItem="kCP-yd-JIa" secondAttribute="bottom" constant="21" id="rHE-3h-1oq"/>
                                 </constraints>
-                            </scrollView>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="oxe-rm-n39" secondAttribute="trailing" id="1FN-tZ-Hum"/>
-                            <constraint firstItem="oxe-rm-n39" firstAttribute="top" secondItem="VBm-8j-oN5" secondAttribute="top" id="Svi-Vz-ilK"/>
-                            <constraint firstItem="oxe-rm-n39" firstAttribute="leading" secondItem="VBm-8j-oN5" secondAttribute="leading" id="YWe-ej-x9k"/>
-                            <constraint firstAttribute="bottom" secondItem="oxe-rm-n39" secondAttribute="bottom" id="dIa-rQ-j1n"/>
+                            <constraint firstItem="Mvn-Iu-mzz" firstAttribute="leading" secondItem="VBm-8j-oN5" secondAttribute="leadingMargin" constant="-16" id="F9w-xd-60j"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Mvn-Iu-mzz" secondAttribute="trailing" constant="-16" id="G1j-mL-xuO"/>
+                            <constraint firstItem="nCK-66-VXn" firstAttribute="top" secondItem="Mvn-Iu-mzz" secondAttribute="bottom" id="gEI-Gi-Yt6"/>
+                            <constraint firstItem="Mvn-Iu-mzz" firstAttribute="top" secondItem="gxO-95-QDJ" secondAttribute="bottom" id="i67-3d-nKA"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Initial antibiotics" id="tbE-wG-d2J"/>
@@ -2487,7 +2465,7 @@ For more topics and guidance on Community Acquired Pneumonia management, choose 
         <!--CAP outpt ABX pathogens-->
         <scene sceneID="CPo-Gg-3m3">
             <objects>
-                <viewController title="CAP outpt ABX pathogens" id="sJf-uR-YST" sceneMemberID="viewController">
+                <viewController title="CAP outpt ABX pathogens" automaticallyAdjustsScrollViewInsets="NO" id="sJf-uR-YST" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fIS-cf-tZw"/>
                         <viewControllerLayoutGuide type="bottom" id="JYg-Qm-ufZ"/>
@@ -2496,51 +2474,33 @@ For more topics and guidance on Community Acquired Pneumonia management, choose 
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AOk-e4-qq6">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3dG-Av-CT4">
+                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3dG-Av-CT4">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                        <subviews>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="25" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="T0l-K8-wXM">
-                                                <rect key="frame" x="20" y="14" width="280" height="233"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <string key="text">Most common etiologies of community acquired pneumonia for outpatients:
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Xv1-a3-drS">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="455"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <string key="text">Most common etiologies of community acquired pneumonia for outpatients:
 
 Streptococcus pneumoniae
 Mycoplasma pneumoniae
 Haemophilus influenzae
 Chlamydophila pneumoniae
-Respiratory viruses (ex: Influenza A 
-  and B, adenovirus, respiratory
-  syncytial virus, parainfluenza)</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" red="0.5568627451" green="0.80784313730000001" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="568" id="FWJ-Pb-DS7"/>
-                                            <constraint firstAttribute="width" constant="320" id="Z0x-dn-nBX"/>
-                                        </constraints>
-                                    </view>
+Respiratory viruses (ex: Influenza A and B, adenovirus, respiratory syncytial virus, parainfluenza)</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="320" id="4hm-NU-rdl"/>
-                                    <constraint firstItem="3dG-Av-CT4" firstAttribute="leading" secondItem="AOk-e4-qq6" secondAttribute="leading" id="ZKM-TU-2S3"/>
-                                    <constraint firstAttribute="trailing" secondItem="3dG-Av-CT4" secondAttribute="trailing" id="nrH-X3-qks"/>
-                                    <constraint firstAttribute="bottom" secondItem="3dG-Av-CT4" secondAttribute="bottom" id="sbk-1M-D4f"/>
-                                    <constraint firstAttribute="height" constant="568" id="v0J-Nl-ZUl"/>
-                                    <constraint firstItem="3dG-Av-CT4" firstAttribute="top" secondItem="AOk-e4-qq6" secondAttribute="top" id="vk0-Kh-ozr"/>
-                                </constraints>
-                            </scrollView>
+                                <color key="backgroundColor" red="0.5568627451" green="0.80784313730000001" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="AOk-e4-qq6" firstAttribute="leading" secondItem="lKF-95-nid" secondAttribute="leading" id="1mr-gd-INW"/>
-                            <constraint firstItem="AOk-e4-qq6" firstAttribute="top" secondItem="lKF-95-nid" secondAttribute="top" id="4CY-7G-Ybr"/>
-                            <constraint firstAttribute="bottom" secondItem="AOk-e4-qq6" secondAttribute="bottom" id="LqR-Y9-k2G"/>
-                            <constraint firstAttribute="trailing" secondItem="AOk-e4-qq6" secondAttribute="trailing" id="T42-H4-bWm"/>
+                            <constraint firstItem="JYg-Qm-ufZ" firstAttribute="top" secondItem="3dG-Av-CT4" secondAttribute="bottom" id="0vr-zG-8cO"/>
+                            <constraint firstItem="3dG-Av-CT4" firstAttribute="top" secondItem="fIS-cf-tZw" secondAttribute="bottom" id="2ud-yk-S6X"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3dG-Av-CT4" secondAttribute="trailing" constant="-16" id="fVt-A6-VPW"/>
+                            <constraint firstItem="3dG-Av-CT4" firstAttribute="leading" secondItem="lKF-95-nid" secondAttribute="leadingMargin" constant="-16" id="kva-nC-sGU"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="likely pathogens" id="huX-rz-TWG"/>
@@ -2563,77 +2523,61 @@ Respiratory viruses (ex: Influenza A
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZAN-FS-xGe">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BNt-vf-Cus">
+                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BNt-vf-Cus">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                        <subviews>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Does this hosp floor CAP pt have a risk of Pseudomonas Aeruginosa?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="jh8-qe-AH4">
-                                                <rect key="frame" x="20" y="14" width="280" height="49"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LxR-Pj-fL6">
-                                                <rect key="frame" x="20" y="71" width="280" height="34"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                <state key="normal" title="Yes">
-                                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <segue destination="4dY-tr-YTT" kind="push" id="r0T-Xm-Obe"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Psh-yK-tdq">
-                                                <rect key="frame" x="20" y="109" width="280" height="34"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                <state key="normal" title="No">
-                                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <segue destination="UhL-H1-jx2" kind="push" id="MU2-VV-soD"/>
-                                                </connections>
-                                            </button>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="wordWrap" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="JbJ-G3-f4O">
-                                                <rect key="frame" x="20" y="151" width="280" height="136"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <string key="text">Risk of Pseudomonal pneumonia influences antibiotic choice.  Patient has risk of P. aeruginosa with either of the following risk factors:
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Does this hosp floor CAP pt have a risk of Pseudomonas Aeruginosa?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="jh8-qe-AH4">
+                                        <rect key="frame" x="20" y="14" width="280" height="49"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LxR-Pj-fL6">
+                                        <rect key="frame" x="20" y="71" width="280" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Yes">
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="4dY-tr-YTT" kind="push" id="r0T-Xm-Obe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Psh-yK-tdq">
+                                        <rect key="frame" x="20" y="109" width="280" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="No">
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="UhL-H1-jx2" kind="push" id="MU2-VV-soD"/>
+                                        </connections>
+                                    </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ewa-ty-8ww">
+                                        <rect key="frame" x="20" y="151" width="280" height="296"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <string key="text">Risk of Pseudomonal pneumonia influences antibiotic choice.  Patient has risk of P. aeruginosa with either of the following risk factors:
 - structural lung dz (i.e. bronchiectasis)
 - repeated exacerbations of severe COPD leading to frequent systemic steroid and/or antibiotic use</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" red="0.5568627451" green="0.80784313730000001" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="320" id="bJT-Gg-YIB"/>
-                                            <constraint firstAttribute="height" constant="568" id="j0P-0o-nm8"/>
-                                        </constraints>
-                                    </view>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="BNt-vf-Cus" firstAttribute="leading" secondItem="ZAN-FS-xGe" secondAttribute="leading" id="5Wx-ui-IdO"/>
-                                    <constraint firstAttribute="trailing" secondItem="BNt-vf-Cus" secondAttribute="trailing" id="Gth-bG-2mf"/>
-                                    <constraint firstAttribute="width" constant="320" id="PUq-dy-XSb"/>
-                                    <constraint firstAttribute="bottom" secondItem="BNt-vf-Cus" secondAttribute="bottom" id="Wk0-gY-Bmo"/>
-                                    <constraint firstAttribute="height" constant="568" id="bW0-Po-lKx"/>
-                                    <constraint firstItem="BNt-vf-Cus" firstAttribute="top" secondItem="ZAN-FS-xGe" secondAttribute="top" id="wQF-9Z-ZuX"/>
-                                </constraints>
-                            </scrollView>
+                                <color key="backgroundColor" red="0.5568627451" green="0.80784313730000001" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="ZAN-FS-xGe" secondAttribute="trailing" id="1Un-sa-G6g"/>
-                            <constraint firstItem="ZAN-FS-xGe" firstAttribute="leading" secondItem="4wU-TZ-tnv" secondAttribute="leading" id="bwn-PJ-FCQ"/>
-                            <constraint firstAttribute="bottom" secondItem="ZAN-FS-xGe" secondAttribute="bottom" id="hEh-OA-lrB"/>
-                            <constraint firstItem="ZAN-FS-xGe" firstAttribute="top" secondItem="4wU-TZ-tnv" secondAttribute="top" id="i2C-06-TSi"/>
+                            <constraint firstItem="BNt-vf-Cus" firstAttribute="leading" secondItem="4wU-TZ-tnv" secondAttribute="leadingMargin" constant="-16" id="1Q8-xS-Yu3"/>
+                            <constraint firstItem="PE8-sk-Ch7" firstAttribute="top" secondItem="BNt-vf-Cus" secondAttribute="bottom" id="F2n-TH-jnc"/>
+                            <constraint firstItem="BNt-vf-Cus" firstAttribute="top" secondItem="bIy-0q-jeW" secondAttribute="bottom" id="srt-0K-YyG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BNt-vf-Cus" secondAttribute="trailing" constant="-16" id="uc7-Xp-cod"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Pseudomonas risk?" id="fi4-I9-56z"/>
@@ -2656,16 +2600,43 @@ Respiratory viruses (ex: Influenza A
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fKF-Bh-OGq">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tjh-CU-A7g">
+                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tjh-CU-A7g">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                        <subviews>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="25" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="dUa-0T-lqh">
-                                                <rect key="frame" x="20" y="14" width="280" height="222"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <string key="text">Hosp floor CAP pt with risk of 
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5fG-1E-rbQ">
+                                        <rect key="frame" x="20" y="354" width="280" height="34"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="3bl-W2-HZb"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="ⓘ likely pathogens">
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="Jut-g2-k3m" kind="push" id="0ZX-ma-eQQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C5C-n0-rSz">
+                                        <rect key="frame" x="20" y="396" width="280" height="34"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="O8v-am-Bax"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Comm Acq Pneumonia topics">
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="hbR-uI-wa7" kind="push" id="A0Q-sF-dvT"/>
+                                        </connections>
+                                    </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="VaF-0D-1NF">
+                                        <rect key="frame" x="20" y="8" width="280" height="267.5"/>
+                                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <string key="text">Hosp floor CAP pt with risk of 
 Pseudomonas may begin therapy with
 
 Anti-Pseudomonal B-lactam* 
@@ -2676,67 +2647,41 @@ Anti-Pseudomonal B-lactam*
 Levo 750 mg or Cipro; OR
 Aminoglyc + Azithro; OR
 Aminoglyc + Resp Fluoroq (levo, moxi)</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5fG-1E-rbQ">
-                                                <rect key="frame" x="20" y="328" width="280" height="34"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                <state key="normal" title="ⓘ likely pathogens">
-                                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <segue destination="Jut-g2-k3m" kind="push" id="0ZX-ma-eQQ"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C5C-n0-rSz">
-                                                <rect key="frame" x="20" y="366" width="280" height="34"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                <state key="normal" title="Comm Acq Pneumonia topics">
-                                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <segue destination="hbR-uI-wa7" kind="push" id="A0Q-sF-dvT"/>
-                                                </connections>
-                                            </button>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="wordWrap" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="7V2-fw-AJ7">
-                                                <rect key="frame" x="20" y="244" width="280" height="76"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <string key="text">Be sure to tailor therapy for local infection and resistance patterns
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="7V2-fw-AJ7">
+                                        <rect key="frame" x="20" y="283" width="280" height="62.5"/>
+                                        <string key="text">Be sure to tailor therapy for local infection and resistance patterns
 *For Penicillin allergic pts substitute Aztreonam 2 g q8h for B-lactam</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" red="0.5568627451" green="0.80784313730000001" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="320" id="nSA-8i-8Tf"/>
-                                            <constraint firstAttribute="height" constant="568" id="ygQ-jr-hkT"/>
-                                        </constraints>
-                                    </view>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
+                                <color key="backgroundColor" red="0.5568627451" green="0.80784313730000001" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="Tjh-CU-A7g" secondAttribute="trailing" id="975-Gc-I5d"/>
-                                    <constraint firstItem="Tjh-CU-A7g" firstAttribute="top" secondItem="fKF-Bh-OGq" secondAttribute="top" id="BBD-Qw-aEs"/>
-                                    <constraint firstAttribute="bottom" secondItem="Tjh-CU-A7g" secondAttribute="bottom" id="EZL-6L-VJ7"/>
-                                    <constraint firstItem="Tjh-CU-A7g" firstAttribute="leading" secondItem="fKF-Bh-OGq" secondAttribute="leading" id="G9P-9n-2ao"/>
-                                    <constraint firstAttribute="height" constant="568" id="TGk-BK-Sz8"/>
-                                    <constraint firstAttribute="width" constant="320" id="qyC-EI-Z1N"/>
+                                    <constraint firstItem="C5C-n0-rSz" firstAttribute="leading" secondItem="Tjh-CU-A7g" secondAttribute="leading" constant="20" id="HG8-UK-Yfa"/>
+                                    <constraint firstItem="7V2-fw-AJ7" firstAttribute="top" secondItem="VaF-0D-1NF" secondAttribute="bottom" constant="8" id="HvO-8x-XKD"/>
+                                    <constraint firstAttribute="trailing" secondItem="VaF-0D-1NF" secondAttribute="trailing" constant="20" id="KR8-JO-bBK"/>
+                                    <constraint firstAttribute="trailing" secondItem="C5C-n0-rSz" secondAttribute="trailing" constant="20" id="RM5-Ij-K2Q"/>
+                                    <constraint firstItem="7V2-fw-AJ7" firstAttribute="leading" secondItem="Tjh-CU-A7g" secondAttribute="leading" constant="20" id="UMK-gl-Xku"/>
+                                    <constraint firstAttribute="trailing" secondItem="5fG-1E-rbQ" secondAttribute="trailing" constant="20" id="Vxf-KF-ZDT"/>
+                                    <constraint firstItem="5fG-1E-rbQ" firstAttribute="leading" secondItem="Tjh-CU-A7g" secondAttribute="leading" constant="20" id="gJK-3a-Odk"/>
+                                    <constraint firstAttribute="trailing" secondItem="7V2-fw-AJ7" secondAttribute="trailing" constant="20" id="hDa-Nm-Y2L"/>
+                                    <constraint firstItem="VaF-0D-1NF" firstAttribute="top" secondItem="Tjh-CU-A7g" secondAttribute="top" constant="8" id="hTE-2z-meI"/>
+                                    <constraint firstItem="C5C-n0-rSz" firstAttribute="top" secondItem="5fG-1E-rbQ" secondAttribute="bottom" constant="8" id="qy6-0j-eKF"/>
+                                    <constraint firstAttribute="bottom" secondItem="C5C-n0-rSz" secondAttribute="bottom" constant="25" id="rNu-JE-eer"/>
+                                    <constraint firstItem="5fG-1E-rbQ" firstAttribute="top" secondItem="7V2-fw-AJ7" secondAttribute="bottom" constant="8.5" id="uPO-kB-kFL"/>
+                                    <constraint firstItem="VaF-0D-1NF" firstAttribute="leading" secondItem="Tjh-CU-A7g" secondAttribute="leading" constant="20" id="uZ4-z4-5kS"/>
                                 </constraints>
-                            </scrollView>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="fKF-Bh-OGq" secondAttribute="bottom" id="FfX-a1-NfL"/>
-                            <constraint firstAttribute="trailing" secondItem="fKF-Bh-OGq" secondAttribute="trailing" id="Onx-bz-CpA"/>
-                            <constraint firstItem="fKF-Bh-OGq" firstAttribute="leading" secondItem="kH2-1N-ITA" secondAttribute="leading" id="k5W-3U-Ljp"/>
-                            <constraint firstItem="fKF-Bh-OGq" firstAttribute="top" secondItem="kH2-1N-ITA" secondAttribute="top" id="wpz-om-zTT"/>
+                            <constraint firstItem="Tjh-CU-A7g" firstAttribute="leading" secondItem="kH2-1N-ITA" secondAttribute="leadingMargin" constant="-16" id="2em-I2-Vqh"/>
+                            <constraint firstItem="Tjh-CU-A7g" firstAttribute="top" secondItem="rT1-Ga-vj6" secondAttribute="bottom" id="TdD-Ny-cpc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Tjh-CU-A7g" secondAttribute="trailing" constant="-16" id="bf5-y0-Qtk"/>
+                            <constraint firstItem="Q47-DN-LcA" firstAttribute="top" secondItem="Tjh-CU-A7g" secondAttribute="bottom" id="vdX-Kb-V4R"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Initial antibiotics" id="OXc-bA-c4t"/>
@@ -2750,7 +2695,7 @@ Aminoglyc + Resp Fluoroq (levo, moxi)</string>
         <!--CAP floor ABX no PAer-->
         <scene sceneID="nk1-h7-b8f">
             <objects>
-                <viewController title="CAP floor ABX no PAer" id="UhL-H1-jx2" userLabel="CAP floor ABX no PAer" sceneMemberID="viewController">
+                <viewController title="CAP floor ABX no PAer" automaticallyAdjustsScrollViewInsets="NO" id="UhL-H1-jx2" userLabel="CAP floor ABX no PAer" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hvd-LX-zpQ"/>
                         <viewControllerLayoutGuide type="bottom" id="7Nr-6f-6dO"/>
@@ -2759,16 +2704,48 @@ Aminoglyc + Resp Fluoroq (levo, moxi)</string>
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PAf-J6-mD2">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KGz-dm-V1W">
+                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KGz-dm-V1W">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                        <subviews>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="25" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="s6N-Wu-hlU">
-                                                <rect key="frame" x="20" y="14" width="280" height="246"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <string key="text">Hosp floor CAP pt without risk of Pseudomonas may begin tx with
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B7M-Ql-eTS">
+                                        <rect key="frame" x="20" y="328" width="280" height="34"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="a5W-KP-haf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="ⓘ likely pathogens">
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="LPB-xj-Qq5" kind="push" id="07a-78-0Oz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UKo-R1-vhD">
+                                        <rect key="frame" x="20" y="366" width="280" height="34"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="ALr-GC-KSN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Comm Acq Pneumonia topics">
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="hbR-uI-wa7" kind="push" id="2L5-ea-7Ms"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Be sure to tailor therapy for local infection and resistance patterns" lineBreakMode="wordWrap" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="Btq-6V-3MR">
+                                        <rect key="frame" x="20" y="288.5" width="280" height="31.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pie-rW-dDy">
+                                        <rect key="frame" x="20" y="8" width="280" height="258.5"/>
+                                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <string key="text">Hosp floor CAP pt without risk of Pseudomonas may begin tx with
 
 Resp Fluoroquin (levo, moxi) alone
 
@@ -2779,68 +2756,39 @@ Ampicillin                        Azithromycin
 Ceftriax                less preferred Doxy
 Cefotax                                                 .                      
 Cefurox                                                 .</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B7M-Ql-eTS">
-                                                <rect key="frame" x="20" y="328" width="280" height="34"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                <state key="normal" title="ⓘ likely pathogens">
-                                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <segue destination="LPB-xj-Qq5" kind="push" id="07a-78-0Oz"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UKo-R1-vhD">
-                                                <rect key="frame" x="20" y="366" width="280" height="34"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                <state key="normal" title="Comm Acq Pneumonia topics">
-                                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <segue destination="hbR-uI-wa7" kind="push" id="2L5-ea-7Ms"/>
-                                                </connections>
-                                            </button>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Be sure to tailor therapy for local infection and resistance patterns" lineBreakMode="wordWrap" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="Btq-6V-3MR">
-                                                <rect key="frame" x="20" y="280" width="280" height="40"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" red="0.5568627451" green="0.80784313730000001" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="320" id="cSW-DM-7P3"/>
-                                            <constraint firstAttribute="height" constant="568" id="lyq-dh-sQ1"/>
-                                        </constraints>
-                                    </view>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
                                 </subviews>
+                                <color key="backgroundColor" red="0.5568627451" green="0.80784313730000001" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="320" id="4dO-Up-swR"/>
-                                    <constraint firstAttribute="bottom" secondItem="KGz-dm-V1W" secondAttribute="bottom" id="6BV-jQ-3wc"/>
-                                    <constraint firstItem="KGz-dm-V1W" firstAttribute="leading" secondItem="PAf-J6-mD2" secondAttribute="leading" id="Aso-Zs-Tyq"/>
-                                    <constraint firstItem="KGz-dm-V1W" firstAttribute="top" secondItem="PAf-J6-mD2" secondAttribute="top" id="n09-Ur-X0L"/>
-                                    <constraint firstAttribute="trailing" secondItem="KGz-dm-V1W" secondAttribute="trailing" id="pAo-hL-9FO"/>
-                                    <constraint firstAttribute="height" constant="568" id="yWJ-O6-fyU"/>
+                                    <constraint firstAttribute="trailing" secondItem="B7M-Ql-eTS" secondAttribute="trailing" constant="20" id="558-9Q-1EJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="Btq-6V-3MR" secondAttribute="trailing" constant="20" id="EmR-15-ypi"/>
+                                    <constraint firstItem="Btq-6V-3MR" firstAttribute="leading" secondItem="KGz-dm-V1W" secondAttribute="leading" constant="20" id="Eyf-xE-Cma"/>
+                                    <constraint firstAttribute="trailing" secondItem="pie-rW-dDy" secondAttribute="trailing" constant="20" id="Frz-QZ-Nle"/>
+                                    <constraint firstItem="Btq-6V-3MR" firstAttribute="top" secondItem="pie-rW-dDy" secondAttribute="bottom" constant="22" id="HZ2-G3-Z1A"/>
+                                    <constraint firstAttribute="bottom" secondItem="UKo-R1-vhD" secondAttribute="bottom" constant="55" id="M6L-1b-q1U"/>
+                                    <constraint firstItem="pie-rW-dDy" firstAttribute="top" secondItem="KGz-dm-V1W" secondAttribute="top" constant="8" id="aOA-mY-wQI"/>
+                                    <constraint firstAttribute="trailing" secondItem="UKo-R1-vhD" secondAttribute="trailing" constant="20" id="abn-qW-FNq"/>
+                                    <constraint firstItem="B7M-Ql-eTS" firstAttribute="top" secondItem="Btq-6V-3MR" secondAttribute="bottom" constant="8" id="b2j-tf-9v0"/>
+                                    <constraint firstItem="UKo-R1-vhD" firstAttribute="leading" secondItem="KGz-dm-V1W" secondAttribute="leading" constant="20" id="gFS-yV-PXP"/>
+                                    <constraint firstItem="B7M-Ql-eTS" firstAttribute="leading" secondItem="KGz-dm-V1W" secondAttribute="leading" constant="20" id="kfP-lh-tqa"/>
+                                    <constraint firstItem="UKo-R1-vhD" firstAttribute="top" secondItem="B7M-Ql-eTS" secondAttribute="bottom" constant="4" id="qfo-ve-iFL"/>
+                                    <constraint firstItem="pie-rW-dDy" firstAttribute="leading" secondItem="KGz-dm-V1W" secondAttribute="leading" constant="20" id="uHu-dC-oEC"/>
                                 </constraints>
-                            </scrollView>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="PAf-J6-mD2" secondAttribute="trailing" id="4RY-Ev-bOk"/>
-                            <constraint firstItem="PAf-J6-mD2" firstAttribute="top" secondItem="9zh-yz-Bur" secondAttribute="top" id="ZoE-Kg-FHZ"/>
-                            <constraint firstItem="PAf-J6-mD2" firstAttribute="leading" secondItem="9zh-yz-Bur" secondAttribute="leading" id="up5-6W-4Lf"/>
-                            <constraint firstAttribute="bottom" secondItem="PAf-J6-mD2" secondAttribute="bottom" id="yTm-UF-gWE"/>
+                            <constraint firstItem="KGz-dm-V1W" firstAttribute="top" secondItem="hvd-LX-zpQ" secondAttribute="bottom" id="7dc-6Q-VZv"/>
+                            <constraint firstItem="KGz-dm-V1W" firstAttribute="leading" secondItem="9zh-yz-Bur" secondAttribute="leadingMargin" constant="-16" id="9gf-fI-dLf"/>
+                            <constraint firstItem="7Nr-6f-6dO" firstAttribute="top" secondItem="KGz-dm-V1W" secondAttribute="bottom" id="FBx-ha-Ypt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KGz-dm-V1W" secondAttribute="trailing" constant="-16" id="gvi-mJ-Kc1"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Initial antibiotics" id="wYW-4W-4cD"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DfJ-eJ-6X6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2849,7 +2797,7 @@ Cefurox                                                 .</string>
         <!--CAP floor ABX PAer pathogens-->
         <scene sceneID="5ef-ML-JNv">
             <objects>
-                <viewController title="CAP floor ABX PAer pathogens" id="Jut-g2-k3m" sceneMemberID="viewController">
+                <viewController title="CAP floor ABX PAer pathogens" automaticallyAdjustsScrollViewInsets="NO" id="Jut-g2-k3m" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="24d-9F-pvs"/>
                         <viewControllerLayoutGuide type="bottom" id="b2H-0Q-oeb"/>
@@ -2858,16 +2806,14 @@ Cefurox                                                 .</string>
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lrt-Ig-4Hs">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1rm-fF-Nx1">
+                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1rm-fF-Nx1">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                        <subviews>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="25" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="0Y4-Ge-4k8">
-                                                <rect key="frame" x="20" y="14" width="280" height="339"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <string key="text">Most common etiologies of community acquired pneumonia for non-ICU hospitalized patients:
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QTe-r2-PVv">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="455"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <string key="text">Most common etiologies of community acquired pneumonia for non-ICU hospitalized patients:
 
 Streptococcus pneumoniae
 Mycoplasma pneumoniae
@@ -2880,33 +2826,19 @@ Respiratory viruses (ex: Influenza A
   syncytial virus, parainfluenza)
 
 plus Pseudomonas aeruginosa in presence of risk factors</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" red="0.5568627451" green="0.80784313730000001" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="568" id="6VR-kl-lQY"/>
-                                            <constraint firstAttribute="width" constant="320" id="kJc-wC-02g"/>
-                                        </constraints>
-                                    </view>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="568" id="Ce9-OL-slE"/>
-                                    <constraint firstAttribute="width" constant="320" id="IrS-bl-lwW"/>
-                                    <constraint firstAttribute="trailing" secondItem="1rm-fF-Nx1" secondAttribute="trailing" id="OO5-bI-LuU"/>
-                                    <constraint firstItem="1rm-fF-Nx1" firstAttribute="top" secondItem="Lrt-Ig-4Hs" secondAttribute="top" id="eZg-bR-fba"/>
-                                    <constraint firstAttribute="bottom" secondItem="1rm-fF-Nx1" secondAttribute="bottom" id="rem-W0-gNN"/>
-                                    <constraint firstItem="1rm-fF-Nx1" firstAttribute="leading" secondItem="Lrt-Ig-4Hs" secondAttribute="leading" id="s5O-sW-PIb"/>
-                                </constraints>
-                            </scrollView>
+                                <color key="backgroundColor" red="0.5568627451" green="0.80784313730000001" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Lrt-Ig-4Hs" firstAttribute="top" secondItem="xxV-Vh-LW7" secondAttribute="top" id="3eY-Ar-C4d"/>
-                            <constraint firstAttribute="trailing" secondItem="Lrt-Ig-4Hs" secondAttribute="trailing" id="6sW-Xw-VTo"/>
-                            <constraint firstItem="Lrt-Ig-4Hs" firstAttribute="leading" secondItem="xxV-Vh-LW7" secondAttribute="leading" id="dil-km-jNh"/>
-                            <constraint firstAttribute="bottom" secondItem="Lrt-Ig-4Hs" secondAttribute="bottom" id="yBb-fA-2NR"/>
+                            <constraint firstItem="1rm-fF-Nx1" firstAttribute="leading" secondItem="xxV-Vh-LW7" secondAttribute="leadingMargin" constant="-16" id="9tm-rr-AeA"/>
+                            <constraint firstItem="b2H-0Q-oeb" firstAttribute="top" secondItem="1rm-fF-Nx1" secondAttribute="bottom" id="INn-JB-wGU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1rm-fF-Nx1" secondAttribute="trailing" constant="-16" id="NLj-JS-QUE"/>
+                            <constraint firstItem="1rm-fF-Nx1" firstAttribute="top" secondItem="24d-9F-pvs" secondAttribute="bottom" id="l1U-eX-nFo"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="likely pathogens" id="HFk-cH-Hd4"/>
@@ -2918,7 +2850,7 @@ plus Pseudomonas aeruginosa in presence of risk factors</string>
         <!--CAP floor ABX no PAer pathogens-->
         <scene sceneID="JKB-EJ-Oah">
             <objects>
-                <viewController title="CAP floor ABX no PAer pathogens" id="LPB-xj-Qq5" sceneMemberID="viewController">
+                <viewController title="CAP floor ABX no PAer pathogens" automaticallyAdjustsScrollViewInsets="NO" id="LPB-xj-Qq5" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ora-1U-pwu"/>
                         <viewControllerLayoutGuide type="bottom" id="FQP-PA-fhn"/>
@@ -2927,16 +2859,14 @@ plus Pseudomonas aeruginosa in presence of risk factors</string>
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="674-ZT-2vl">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wcx-IV-xCf">
+                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wcx-IV-xCf">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                        <subviews>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="25" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="xSR-Sg-ASU">
-                                                <rect key="frame" x="20" y="14" width="280" height="279"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <string key="text">Most common etiologies of community acquired pneumonia for non-ICU hospitalized patients:
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wnD-tb-nNq">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="455"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <string key="text">Most common etiologies of community acquired pneumonia for non-ICU hospitalized patients:
 
 Streptococcus pneumoniae
 Mycoplasma pneumoniae
@@ -2947,36 +2877,24 @@ Aspiration
 Respiratory viruses (ex: Influenza A 
   and B, adenovirus, respiratory
   syncytial virus, parainfluenza)</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" red="0.5568627451" green="0.80784313730000001" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="568" id="GbZ-ho-Z9t"/>
-                                            <constraint firstAttribute="width" constant="320" id="NlU-Ig-2R3"/>
-                                        </constraints>
-                                    </view>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="Wcx-IV-xCf" firstAttribute="leading" secondItem="674-ZT-2vl" secondAttribute="leading" id="7rL-Ti-iSZ"/>
-                                    <constraint firstAttribute="trailing" secondItem="Wcx-IV-xCf" secondAttribute="trailing" id="9Rs-Hf-y6d"/>
-                                    <constraint firstAttribute="bottom" secondItem="Wcx-IV-xCf" secondAttribute="bottom" id="ABq-Ur-gGW"/>
-                                    <constraint firstItem="Wcx-IV-xCf" firstAttribute="top" secondItem="674-ZT-2vl" secondAttribute="top" id="I5H-eB-k62"/>
-                                    <constraint firstAttribute="width" constant="320" id="WCI-0j-Ccv"/>
-                                    <constraint firstAttribute="height" constant="568" id="YR4-m3-jE1"/>
-                                </constraints>
-                            </scrollView>
+                                <color key="backgroundColor" red="0.5568627451" green="0.80784313730000001" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="674-ZT-2vl" secondAttribute="bottom" id="2DC-P6-zxB"/>
-                            <constraint firstItem="674-ZT-2vl" firstAttribute="top" secondItem="A3v-2L-VHP" secondAttribute="top" id="V85-5d-XKr"/>
-                            <constraint firstAttribute="trailing" secondItem="674-ZT-2vl" secondAttribute="trailing" id="i6l-g7-PmM"/>
-                            <constraint firstItem="674-ZT-2vl" firstAttribute="leading" secondItem="A3v-2L-VHP" secondAttribute="leading" id="q24-Xw-OtQ"/>
+                            <constraint firstItem="FQP-PA-fhn" firstAttribute="top" secondItem="Wcx-IV-xCf" secondAttribute="bottom" id="0Kh-vh-sNu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Wcx-IV-xCf" secondAttribute="trailing" constant="-16" id="MDB-fb-5KA"/>
+                            <constraint firstItem="Wcx-IV-xCf" firstAttribute="leading" secondItem="A3v-2L-VHP" secondAttribute="leadingMargin" constant="-16" id="T7E-lC-KC9"/>
+                            <constraint firstItem="Wcx-IV-xCf" firstAttribute="top" secondItem="Ora-1U-pwu" secondAttribute="bottom" id="uaW-UL-3hC"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="likely pathogens" id="vf2-lp-m0q"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Que-QU-hxg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -3068,6 +2986,8 @@ Respiratory viruses (ex: Influenza A
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Pseudomonas risk?" id="dUh-ow-Dv7"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jeo-QL-Blc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -3169,6 +3089,8 @@ Aminoglyc + Resp Fluoroq (levo, moxi)</string>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Initial antibiotics" id="Lf0-OU-H6P"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sEk-8W-Gfl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -3268,6 +3190,8 @@ Resp Fluoroquin (levo, moxi)</string>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Initial antibiotics" id="ToH-aM-s65"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SRe-Pf-ifq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -3333,6 +3257,8 @@ plus Pseudomonas aeruginosa in presence of risk factors</string>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="likely pathogens" id="4K5-nl-MUf"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GBN-Az-GLY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -3396,6 +3322,8 @@ Haemophilus influenzae</string>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="likely pathogens" id="OGJ-hG-mqy"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z5T-Mm-RsL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -3478,6 +3406,8 @@ Linezolid 600 mg IV q12h</string>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="CAP: cover MRSA" id="ZCk-yi-eSu"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nIo-oG-sAJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -3586,6 +3516,8 @@ Linezolid 600 mg IV q12h</string>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="mgmt &amp; conclude" id="4x8-k1-CDg"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nj3-9T-FTw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -3645,6 +3577,8 @@ If/when pathogen identified, ABX therapy should be directed to the specific path
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="ABX IV to PO" id="P0d-OM-WfI"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cVZ-3D-E7V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -3711,6 +3645,8 @@ Specifically for hospitalized patients, after 5 days may discontinue antibiotics
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="ABX duration" id="Scd-OI-XJO"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I3s-yz-1MU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -3777,6 +3713,8 @@ Right Diagnosis but Complication
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="pt not better" id="v67-0p-IMV"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mCP-EU-rKX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -3839,6 +3777,8 @@ Right Diagnosis but Complication
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="hosp discharge" id="v8b-Sh-fBM"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tnb-gy-hCx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -5492,9 +5432,9 @@ Alternatives: 2nd or 3rd-generation cephalosporin (cefpodoxime, cefuroxime, cefp
         <segue reference="FiL-Hn-TNG"/>
         <segue reference="Jl9-NT-Gne"/>
         <segue reference="8op-cI-bkh"/>
-        <segue reference="nSS-wO-nBo"/>
-        <segue reference="4f7-ZD-rhS"/>
-        <segue reference="uvQ-J3-tZx"/>
+        <segue reference="f1K-ga-uh7"/>
         <segue reference="PzY-rh-FR5"/>
+        <segue reference="tyI-tX-lIB"/>
+        <segue reference="aJM-8L-jju"/>
     </inferredMetricsTieBreakers>
 </document>
