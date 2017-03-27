@@ -1331,7 +1331,7 @@ for review</string>
         <!--CAP tx setting-->
         <scene sceneID="4Fl-NY-aBX">
             <objects>
-                <viewController title="CAP tx setting" id="rSd-HV-ACS" userLabel="CAP tx setting" sceneMemberID="viewController">
+                <viewController title="CAP tx setting" automaticallyAdjustsScrollViewInsets="NO" id="rSd-HV-ACS" userLabel="CAP tx setting" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="NUi-3L-pE6"/>
                         <viewControllerLayoutGuide type="bottom" id="rmU-AG-cJQ"/>
@@ -1340,105 +1340,87 @@ for review</string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mpI-1i-Kkf">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xfv-n2-ore">
+                                <rect key="frame" x="4" y="64" width="406" height="623"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xfv-n2-ore">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                        <subviews>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose treatment setting based upon illness severity at presentation" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="zSi-wm-5mK">
-                                                <rect key="frame" x="20" y="14" width="280" height="48"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qaq-GB-YPL">
-                                                <rect key="frame" x="20" y="86" width="280" height="34"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                <state key="normal" title="Inpatient">
-                                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <segue destination="bgv-fV-Cxd" kind="push" id="AHA-hB-tmQ"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XZY-05-BQ0">
-                                                <rect key="frame" x="20" y="124" width="280" height="34"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                <state key="normal" title="Outpatient">
-                                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <segue destination="jvY-RL-uhq" kind="push" id="zb6-sm-H1q"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9M-wk-cb7">
-                                                <rect key="frame" x="20" y="162" width="280" height="34"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                <state key="normal" title="ⓘ CRB-65 &amp; severity scores">
-                                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <segue destination="CNy-gB-aZ7" kind="push" id="h1d-Hp-Oh7"/>
-                                                </connections>
-                                            </button>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="wordWrap" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="4mE-ab-YjY">
-                                                <rect key="frame" x="20" y="204" width="280" height="185"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <string key="text">Consider inpatient if CRB-65 score ≥ 2,
-  unable to take PO, or hypoxic (&lt;90%)
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose treatment setting based upon illness severity at presentation" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="zSi-wm-5mK">
+                                        <rect key="frame" x="63" y="14" width="280" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qaq-GB-YPL">
+                                        <rect key="frame" x="25.5" y="86" width="355" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Inpatient">
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="bgv-fV-Cxd" kind="push" id="AHA-hB-tmQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XZY-05-BQ0">
+                                        <rect key="frame" x="25.5" y="124" width="355" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Outpatient">
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="jvY-RL-uhq" kind="push" id="zb6-sm-H1q"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9M-wk-cb7">
+                                        <rect key="frame" x="25.5" y="162" width="355" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="ⓘ CRB-65 &amp; severity scores">
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="CNy-gB-aZ7" kind="push" id="h1d-Hp-Oh7"/>
+                                        </connections>
+                                    </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="q0s-1G-v5S">
+                                        <rect key="frame" x="20" y="217" width="366" height="398"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <string key="text">Consider inpatient if CRB-65 score ≥ 2, unable to take PO, or hypoxic (&lt;90%)
 
-Consider outpatient if CRB-65 &lt; 2, taking PO,
-  no hypoxia
+Consider outpatient if CRB-65 &lt; 2, taking PO, no hypoxia
 
 CRB-65 severity score: 1 point each...
 - Confusion including person, place, or time
 - Resp rate ≥ 30        
 - BP low with SBP &lt; 90 or DBP &lt; 60
 - 65 yrs old or greater</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" red="0.5568627451" green="0.80784313730000001" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="320" id="mrm-k1-uQe"/>
-                                            <constraint firstAttribute="height" constant="568" id="tip-v5-3rQ"/>
-                                        </constraints>
-                                    </view>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="xfv-n2-ore" firstAttribute="leading" secondItem="mpI-1i-Kkf" secondAttribute="leading" id="0Fa-Eq-1xA"/>
-                                    <constraint firstItem="xfv-n2-ore" firstAttribute="top" secondItem="mpI-1i-Kkf" secondAttribute="top" id="cAI-iX-hzs"/>
-                                    <constraint firstAttribute="height" constant="568" id="jcI-4H-pcV"/>
-                                    <constraint firstAttribute="bottom" secondItem="xfv-n2-ore" secondAttribute="bottom" id="pW4-RH-Wdq"/>
-                                    <constraint firstAttribute="trailing" secondItem="xfv-n2-ore" secondAttribute="trailing" id="tRP-Z2-Bzc"/>
-                                    <constraint firstAttribute="width" constant="320" id="uri-Yi-ARz"/>
-                                </constraints>
-                            </scrollView>
+                                <color key="backgroundColor" red="0.5568627451" green="0.80784313730000001" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="mpI-1i-Kkf" firstAttribute="top" secondItem="SeN-CL-qbs" secondAttribute="top" id="PQu-bv-qW8"/>
-                            <constraint firstItem="mpI-1i-Kkf" firstAttribute="leading" secondItem="SeN-CL-qbs" secondAttribute="leading" id="TIO-qW-LaM"/>
-                            <constraint firstAttribute="trailing" secondItem="mpI-1i-Kkf" secondAttribute="trailing" id="soW-og-Xda"/>
-                            <constraint firstAttribute="bottom" secondItem="mpI-1i-Kkf" secondAttribute="bottom" id="vgE-TJ-1A5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xfv-n2-ore" secondAttribute="trailing" constant="-16" id="FT2-5g-Q5T"/>
+                            <constraint firstItem="xfv-n2-ore" firstAttribute="top" secondItem="NUi-3L-pE6" secondAttribute="bottom" id="QTl-CK-trO"/>
+                            <constraint firstItem="xfv-n2-ore" firstAttribute="leading" secondItem="SeN-CL-qbs" secondAttribute="leadingMargin" constant="-16" id="svY-54-XuX"/>
+                            <constraint firstItem="rmU-AG-cJQ" firstAttribute="top" secondItem="xfv-n2-ore" secondAttribute="bottom" id="zlS-DD-m9a"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Treatment setting" id="O96-LW-KiY"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="csb-3h-XUP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="265" y="-1101"/>
+            <point key="canvasLocation" x="-49" y="-1233"/>
         </scene>
         <!--severity scores-->
         <scene sceneID="LF4-1l-QO6">
@@ -1449,7 +1431,7 @@ CRB-65 severity score: 1 point each...
                         <viewControllerLayoutGuide type="bottom" id="FBL-Yx-vlR"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="J7X-ne-Qbt">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="700"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wkv-6p-3fp">
@@ -1502,12 +1484,10 @@ There are several pneumonia severity scoring schemes developed and evaluated in 
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="severity scores" id="KDo-Qd-7zw"/>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="320" height="700"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kLB-Gz-Aso" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1755" y="-1204"/>
+            <point key="canvasLocation" x="2560" y="-1251"/>
         </scene>
         <!--CAP: outpatient-->
         <scene sceneID="wvn-XT-ufQ">
@@ -1593,7 +1573,7 @@ For more topics and guidance on Community Acquired Pneumonia management, choose 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Kp-zW-Oy5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1356" y="-1270"/>
+            <point key="canvasLocation" x="1874" y="-1221"/>
         </scene>
         <!--CAP: ICU vs floor-->
         <scene sceneID="WCg-oY-gNv">
@@ -1694,7 +1674,7 @@ Minor Criteria ICU Admission:
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9kC-ms-A70" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="809" y="-1189"/>
+            <point key="canvasLocation" x="1090" y="-1233"/>
         </scene>
         <!--CAP: ICU-->
         <scene sceneID="UzD-WS-XQ0">
@@ -1864,7 +1844,7 @@ For more topics and guidance on Community Acquired Pneumonia management, choose 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gl7-RJ-mzC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="974" y="-632"/>
+            <point key="canvasLocation" x="1723" y="-286"/>
         </scene>
         <!--CAP diagnostic testing-->
         <scene sceneID="hQd-Tl-d9z">
@@ -1946,7 +1926,7 @@ For more topics and guidance on Community Acquired Pneumonia management, choose 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ROt-ez-gio" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="341" y="32"/>
+            <point key="canvasLocation" x="179" y="116"/>
         </scene>
         <!--CAP: outpatient tests-->
         <scene sceneID="Xb6-Ig-HHP">
@@ -2032,7 +2012,7 @@ For more topics and guidance on Community Acquired Pneumonia management, choose 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="abb-Sm-y0p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1393" y="32"/>
+            <point key="canvasLocation" x="2813" y="32"/>
         </scene>
         <!--CAP: inpatient tests PIC-->
         <scene sceneID="8qW-D3-Aom">
@@ -2043,7 +2023,7 @@ For more topics and guidance on Community Acquired Pneumonia management, choose 
                         <viewControllerLayoutGuide type="bottom" id="jq8-Tb-1YU"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="S25-lX-dEl">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="968"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JMy-n8-rTy">
@@ -2125,12 +2105,10 @@ For more topics and guidance on Community Acquired Pneumonia management, choose 
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Inpatient tests" id="6No-Mp-uMs" userLabel="Inpatient tests"/>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="320" height="968"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qwj-sg-jnv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="809" y="32"/>
+            <point key="canvasLocation" x="1090" y="76"/>
         </scene>
         <!--CAP intial ABX-->
         <scene sceneID="KI2-tl-eIu">
@@ -2231,7 +2209,7 @@ For more topics and guidance on Community Acquired Pneumonia management, choose 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mUd-WO-81W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="341" y="1669"/>
+            <point key="canvasLocation" x="-767" y="1771"/>
         </scene>
         <!--CAP outpt ABX-->
         <scene sceneID="JKi-xv-hWx">
@@ -2325,7 +2303,7 @@ For more topics and guidance on Community Acquired Pneumonia management, choose 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ucm-j5-Eyh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="699" y="978"/>
+            <point key="canvasLocation" x="-114" y="978"/>
         </scene>
         <!--CAP outpt ABX DR strep-->
         <scene sceneID="utc-0l-xkh">
@@ -2423,7 +2401,7 @@ For more topics and guidance on Community Acquired Pneumonia management, choose 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GgK-0I-uTZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1057" y="978"/>
+            <point key="canvasLocation" x="574" y="978"/>
         </scene>
         <!--CAP outpt ABX no DR strep-->
         <scene sceneID="Dzl-Xn-7N3">
@@ -2514,7 +2492,7 @@ For more topics and guidance on Community Acquired Pneumonia management, choose 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sce-rS-0we" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1407" y="978"/>
+            <point key="canvasLocation" x="1235" y="978"/>
         </scene>
         <!--CAP outpt ABX pathogens-->
         <scene sceneID="CPo-Gg-3m3">
@@ -2579,7 +2557,7 @@ Respiratory viruses (ex: Influenza A
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jJZ-av-iTj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1776" y="978"/>
+            <point key="canvasLocation" x="2131" y="978"/>
         </scene>
         <!--CAP floor ABX-->
         <scene sceneID="U3d-Dm-FTK">
@@ -2670,7 +2648,7 @@ Respiratory viruses (ex: Influenza A
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bcQ-M4-wyI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="699" y="1669"/>
+            <point key="canvasLocation" x="58" y="1771"/>
         </scene>
         <!--CAP floor ABX PAer-->
         <scene sceneID="iOt-vb-lcD">
@@ -2771,7 +2749,7 @@ Aminoglyc + Resp Fluoroq (levo, moxi)</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1NZ-Kn-xwT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1057" y="1669"/>
+            <point key="canvasLocation" x="627" y="1771"/>
         </scene>
         <!--CAP floor ABX no PAer-->
         <scene sceneID="nk1-h7-b8f">
@@ -2870,7 +2848,7 @@ Cefurox                                                 .</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DfJ-eJ-6X6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1407" y="1669"/>
+            <point key="canvasLocation" x="1261" y="1929"/>
         </scene>
         <!--CAP floor ABX PAer pathogens-->
         <scene sceneID="5ef-ML-JNv">
@@ -2939,7 +2917,7 @@ plus Pseudomonas aeruginosa in presence of risk factors</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4dr-BI-Xde" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1776" y="1669"/>
+            <point key="canvasLocation" x="2513" y="1771"/>
         </scene>
         <!--CAP floor ABX no PAer pathogens-->
         <scene sceneID="JKB-EJ-Oah">
@@ -3006,7 +2984,7 @@ Respiratory viruses (ex: Influenza A
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Que-QU-hxg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2138" y="1669"/>
+            <point key="canvasLocation" x="3294" y="1692"/>
         </scene>
         <!--CAP ICU ABX-->
         <scene sceneID="cAp-Zv-AoU">
@@ -3097,7 +3075,7 @@ Respiratory viruses (ex: Influenza A
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jeo-QL-Blc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="699" y="2356"/>
+            <point key="canvasLocation" x="58" y="2706"/>
         </scene>
         <!--CAP ICU ABX PAer-->
         <scene sceneID="kvg-w1-fJb">
@@ -3198,7 +3176,7 @@ Aminoglyc + Resp Fluoroq (levo, moxi)</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sEk-8W-Gfl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1057" y="2356"/>
+            <point key="canvasLocation" x="1355" y="2802"/>
         </scene>
         <!--CAP ICU ABX no PAer-->
         <scene sceneID="quO-hE-Epi">
@@ -3297,7 +3275,7 @@ Resp Fluoroquin (levo, moxi)</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SRe-Pf-ifq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1407" y="2356"/>
+            <point key="canvasLocation" x="1874" y="2528"/>
         </scene>
         <!--CAP ICU ABX PAer pathogens-->
         <scene sceneID="L97-LI-vLG">
@@ -3362,7 +3340,7 @@ plus Pseudomonas aeruginosa in presence of risk factors</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GBN-Az-GLY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1057" y="3000"/>
+            <point key="canvasLocation" x="793" y="3048"/>
         </scene>
         <!--CAP ICU ABX no PAer pathogens-->
         <scene sceneID="yve-t5-Dtg">
@@ -3425,7 +3403,7 @@ Haemophilus influenzae</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z5T-Mm-RsL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1407" y="3000"/>
+            <point key="canvasLocation" x="2413" y="3048"/>
         </scene>
         <!--CAP ICU cover MRSA-->
         <scene sceneID="gxV-La-Tsq">
@@ -3507,7 +3485,7 @@ Linezolid 600 mg IV q12h</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nIo-oG-sAJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1776" y="2356"/>
+            <point key="canvasLocation" x="3185" y="2567"/>
         </scene>
         <!--CAP manage & conclude-->
         <scene sceneID="hc3-oF-95N">
@@ -3615,7 +3593,7 @@ Linezolid 600 mg IV q12h</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nj3-9T-FTw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="341" y="3677"/>
+            <point key="canvasLocation" x="538" y="3863"/>
         </scene>
         <!--CAP ABX IV to PO-->
         <scene sceneID="Xuj-5Z-MDw">
@@ -3674,7 +3652,7 @@ If/when pathogen identified, ABX therapy should be directed to the specific path
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cVZ-3D-E7V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="699" y="3677"/>
+            <point key="canvasLocation" x="1235" y="3863"/>
         </scene>
         <!--CAP ABX duration-->
         <scene sceneID="6tV-fh-Rr5">
@@ -3740,7 +3718,7 @@ Specifically for hospitalized patients, after 5 days may discontinue antibiotics
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I3s-yz-1MU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1057" y="3677"/>
+            <point key="canvasLocation" x="1874" y="3863"/>
         </scene>
         <!--CAP pt not better-->
         <scene sceneID="JvC-YW-LU6">
@@ -3806,7 +3784,7 @@ Right Diagnosis but Complication
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mCP-EU-rKX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1407" y="3677"/>
+            <point key="canvasLocation" x="2448" y="3863"/>
         </scene>
         <!--CAP hosp DC criteria-->
         <scene sceneID="2mW-MY-Dye">
@@ -3868,7 +3846,7 @@ Right Diagnosis but Complication
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tnb-gy-hCx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1755" y="3677"/>
+            <point key="canvasLocation" x="3036" y="3863"/>
         </scene>
         <!--Peds site of care-->
         <scene sceneID="mzo-vk-sjh">
@@ -5515,12 +5493,12 @@ Alternatives: 2nd or 3rd-generation cephalosporin (cefpodoxime, cefuroxime, cefp
         <simulatedScreenMetrics key="destination" type="retina5_5.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="Ang-x8-abQ"/>
         <segue reference="FiL-Hn-TNG"/>
+        <segue reference="Ang-x8-abQ"/>
         <segue reference="7jv-3s-HwE"/>
-        <segue reference="4f7-ZD-rhS"/>
-        <segue reference="8op-cI-bkh"/>
+        <segue reference="FYg-hP-OBc"/>
+        <segue reference="PzY-rh-FR5"/>
         <segue reference="uvQ-J3-tZx"/>
-        <segue reference="GPl-kD-Cie"/>
+        <segue reference="8op-cI-bkh"/>
     </inferredMetricsTieBreakers>
 </document>
