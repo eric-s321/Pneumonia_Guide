@@ -40,6 +40,7 @@
 		6822B8F9199073B30041F5B1 /* email.png in Resources */ = {isa = PBXBuildFile; fileRef = 6822B8F8199073B30041F5B1 /* email.png */; };
 		6822B8FB199073DB0041F5B1 /* caution.png in Resources */ = {isa = PBXBuildFile; fileRef = 6822B8FA199073DB0041F5B1 /* caution.png */; };
 		6822B8FD199074240041F5B1 /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = 6822B8FC199074240041F5B1 /* info.png */; };
+		B6AAFB921E8A1C0000E52665 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AAFB911E8A1C0000E52665 /* WebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +95,8 @@
 		6822B8F8199073B30041F5B1 /* email.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = email.png; sourceTree = "<group>"; };
 		6822B8FA199073DB0041F5B1 /* caution.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = caution.png; sourceTree = "<group>"; };
 		6822B8FC199074240041F5B1 /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = "<group>"; };
+		B6AAFB901E8A1BE600E52665 /* WebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		B6AAFB911E8A1C0000E52665 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +159,8 @@
 				68123E2919887D2500280DD6 /* AppDelegate.h */,
 				68123E2A19887D2500280DD6 /* AppDelegate.m */,
 				68123E2C19887D2500280DD6 /* Main.storyboard */,
+				B6AAFB901E8A1BE600E52665 /* WebViewController.h */,
+				B6AAFB911E8A1C0000E52665 /* WebViewController.m */,
 				68123E2F19887D2500280DD6 /* ViewController.h */,
 				68123E3019887D2500280DD6 /* ViewController.m */,
 				0301151A1D455451004DAC8B /* AboutViewController.h */,
@@ -334,6 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				68123E3119887D2500280DD6 /* ViewController.m in Sources */,
+				B6AAFB921E8A1C0000E52665 /* WebViewController.m in Sources */,
 				0301151C1D455451004DAC8B /* AboutViewController.m in Sources */,
 				031F141C1BC21D46002A584E /* MoreAppsViewController.m in Sources */,
 				68123E2B19887D2500280DD6 /* AppDelegate.m in Sources */,
