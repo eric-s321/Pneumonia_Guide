@@ -4409,11 +4409,11 @@ Alternatives: Peramivir, oseltamivir and zanamivir (all intravenous) are under c
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="455"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <string key="text">Inpatient presumed atypical pneumonia
+                                        <mutableString key="text">Inpatient presumed atypical pneumonia
 
 Preferred: Azithromycin (in addition to Beta-lactam if diagnosis of atypical pneumonia is in doubt)
 
-Alternatives: Clarithromycin or erythromycin; doxycycline for children &gt;7 years old; levofloxacin for children who have reached growth maturity, or who cannot tolerate macrolides</string>
+Alternatives: Clarithromycin or erythromycin; doxycycline for children &gt;7 years old; levofloxacin for children who have reached growth maturity, or who cannot tolerate macrolides.</mutableString>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -4547,7 +4547,7 @@ Alternatives: peramivir, oseltamivir, and zanamivir (all intravenous) are under 
         <!--Peds Outpt ABX atypical-->
         <scene sceneID="zlM-9C-hZP">
             <objects>
-                <viewController title="Peds Outpt ABX atypical" automaticallyAdjustsScrollViewInsets="NO" id="j8d-Py-th0" sceneMemberID="viewController">
+                <viewController title="Peds Outpt ABX atypical" automaticallyAdjustsScrollViewInsets="NO" id="j8d-Py-th0" customClass="TextViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Y0V-8U-Gs3"/>
                         <viewControllerLayoutGuide type="bottom" id="CeR-5W-wiU"/>
@@ -4592,6 +4592,9 @@ Alternatives: oral clarithromycin (15 mg/kg/day in 2 doses to a maximum of 1 g/d
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Atypical" id="6ld-KL-aUe"/>
+                    <connections>
+                        <outlet property="textView" destination="afE-Zj-A2E" id="1NP-hA-ZQl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Et-V9-9Z4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
