@@ -20,13 +20,22 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    UIAlertView *theAlert = [[UIAlertView alloc] initWithTitle:@"This guide will walk you through the management considerations for pneumonia patients according to the American Thoracic Society (ATS) & Infectious Disease Society of America (IDSA)  guidelines on adult hospital (2016), adult community acquired (2007 & 2011), and pediatric (2011) pneumonia."  // got rid of "readme" which filled the quotes, moved message into title
-                                                       message:@""
-                                                      delegate:self
-                                             cancelButtonTitle:@"Get Started"
-                                             otherButtonTitles:nil];
+    UIAlertController * alert = [UIAlertController
+                                 alertControllerWithTitle:@"This guide will walk you through the management considerations for pneumonia patients according to the American Thoracic Society (ATS) & Infectious Disease Society of America (IDSA)  guidelines on adult hospital (2016), adult community acquired (2007 & 2011), and pediatric (2011) pneumonia."
+                                 message:@""
+                                 preferredStyle:UIAlertControllerStyleAlert];
     
-    [theAlert show];
+    
+     
+    UIAlertAction* getStartedBtn = [UIAlertAction
+                        actionWithTitle:@"Get Started"
+                        style:UIAlertActionStyleDefault
+                        handler:^(UIAlertAction * action) {
+                        }];
+    
+    [alert addAction:getStartedBtn];
+    
+    [self presentViewController:alert animated:YES completion:nil];
 }
 
 

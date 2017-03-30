@@ -1,22 +1,25 @@
 //
-//  AboutViewController.m
-//  Bishop scores
+//  TextViewController.m
+//  Pneumonia
 //
-//  Created by Josh on 1/8/15.
-//  Copyright (c) 2015 kangh. All rights reserved.
+//  Created by Eric Scagnelli on 3/30/17.
+//  Copyright © 2017 kangh. All rights reserved.
 //
 
-#import "AboutViewController.h"
+#import "TextViewController.h"
 
-@interface AboutViewController ()
+@interface TextViewController ()
 
 @end
 
-@implementation AboutViewController
+@implementation TextViewController
+@synthesize textView;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [textView setScrollEnabled:NO];
+    [textView setScrollEnabled:YES];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -32,21 +35,6 @@
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
-
-
-
-
-- (IBAction)updateOutputs:(id)sender {
-
-
-}
 */
-
-
-
-
-- (IBAction)emailFeedback:(id)sender {
-    [WebSearcher openWebsite:@"mailto:jds.pocapps@gmail.com"];
-}
 
 @end

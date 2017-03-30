@@ -35,10 +35,9 @@
 */
 
 - (IBAction)gotoSteinbergApps:(id)sender {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://itunes.apple.com/us/developer/joshua-steinberg-md/id374154837"]];
+    [WebSearcher openWebsite:@"https://itunes.apple.com/us/developer/joshua-steinberg-md/id374154837"];
 }
 
- 
 /*
 - (IBAction)gotoPreop:(id)sender {
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://itunes.apple.com/us/app/preop-eval/id374154834?mt=8"]];
@@ -49,8 +48,7 @@
 }
  */
 - (IBAction)gotoAppsList:(id)sender {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://connect.stfm.org/HigherLogic/System/DownloadDocumentFile.ashx?DocumentFileKey=923c59db-843b-1509-3dd8-d1f6d960872d&forceDialog=0"]];
+    [WebSearcher openWebsite:@"http://connect.stfm.org/HigherLogic/System/DownloadDocumentFile.ashx?DocumentFileKey=923c59db-843b-1509-3dd8-d1f6d960872d&forceDialog=0"];
 }
-
 
 @end

@@ -34,8 +34,6 @@
 }
 
 
-
-
 - (IBAction)updateOutputs:(id)sender {
 
 
@@ -44,47 +42,44 @@
 
 
 - (IBAction)refCAP07:(id)sender {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://www.ncbi.nlm.nih.gov/pubmed/17278083"]];
+    [WebSearcher openWebsite:@"https://www.ncbi.nlm.nih.gov/pubmed/17278083"];
 }
 
 - (IBAction)refHAP05:(id)sender {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://www.ncbi.nlm.nih.gov/pubmed/15699079"]];
+    [WebSearcher openWebsite:@"https://www.ncbi.nlm.nih.gov/pubmed/15699079"];
 }
 
 - (IBAction)refHAP16:(id)sender {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://www.ncbi.nlm.nih.gov/pubmed/27418577"]];
+    [WebSearcher openWebsite:@"https://www.ncbi.nlm.nih.gov/pubmed/27418577"];
 }
 
 - (IBAction)refPeds11:(id)sender {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://www.ncbi.nlm.nih.gov/pubmed/21880587"]];
+    [WebSearcher openWebsite:@"https://www.ncbi.nlm.nih.gov/pubmed/21880587"];
 }
 
 - (IBAction)refMRSA11:(id)sender {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://www.ncbi.nlm.nih.gov/pubmed/21208910"]];
+    [WebSearcher openWebsite:@"https://www.ncbi.nlm.nih.gov/pubmed/21208910"];
 }
 
 - (IBAction)refChrisJeff07:(id)sender {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://www.ncbi.nlm.nih.gov/pubmed/17764643/"]];
+    [WebSearcher openWebsite:@"https://www.ncbi.nlm.nih.gov/pubmed/17764643/"];
 }
 
 - (IBAction)refCRB65:(id)sender {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://www.ncbi.nlm.nih.gov/pubmed/16789984"]];
+    [WebSearcher openWebsite:@"https://www.ncbi.nlm.nih.gov/pubmed/16789984"];
 }
 
 - (IBAction)refOchoa11:(id)sender {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://www.ncbi.nlm.nih.gov/pubmed/21951687"]];
+    [WebSearcher openWebsite:@"https://www.ncbi.nlm.nih.gov/pubmed/21951687"];
 }
+
 /*
-
-
 - (IBAction)ref5Pressed:(id)sender {
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://www.ncbi.nlm.nih.gov/pubmed/21951687"]];
-    
 }
 
 - (IBAction)ref8Pressed:(id)sender {
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.ncbi.nlm.nih.gov/pubmed/26844519"]];
-    
 }
  */
 

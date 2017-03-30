@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WebSearcher.h"
 
 @interface MoreAppsViewController : UIViewController {
     

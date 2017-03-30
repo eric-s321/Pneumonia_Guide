@@ -10,61 +10,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Web View Controller-->
-        <scene sceneID="wgw-LF-u1O">
-            <objects>
-                <viewController id="0IV-Zz-UIR" customClass="WebViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="J0M-92-cOB"/>
-                        <viewControllerLayoutGuide type="bottom" id="9S6-Lb-fFU"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="60j-Rb-QIR">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8mv-n9-xXI">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </webView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oPS-rD-G8C">
-                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <items>
-                                    <barButtonItem systemItem="rewind" id="MvJ-nv-WXK">
-                                        <connections>
-                                            <action selector="goBack" destination="8mv-n9-xXI" id="M6C-Jb-tZY"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem systemItem="fastForward" id="Re4-EX-TeR">
-                                        <connections>
-                                            <action selector="goForward" destination="8mv-n9-xXI" id="Gst-Y1-jYk"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Ied-O1-Okb"/>
-                                    <barButtonItem systemItem="refresh" id="qM1-qt-rz2">
-                                        <connections>
-                                            <action selector="reload" destination="8mv-n9-xXI" id="RIp-rI-rdn"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem systemItem="stop" id="xBL-rC-wcX">
-                                        <connections>
-                                            <action selector="stopLoading" destination="8mv-n9-xXI" id="06J-Ow-SbA"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
-                            </toolbar>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <connections>
-                        <outlet property="webView" destination="8mv-n9-xXI" id="Qw8-2M-dCc"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="as8-Hw-ccZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-3760" y="-2550"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="PYo-KP-VFp">
             <objects>
@@ -112,11 +57,11 @@
                                         <rect key="frame" x="8" y="38" width="304" height="451"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <mutableString key="text">Dear Colleague,
+                                        <string key="text">Dear Colleague,
 
   This app seeks to faithfully present the guidance from the IDSA &amp; ATS guidelines and not to substitute the judgment or expertise of the developers.  This app suggests how you might approach mgmt issues for the average pneumonia patient in many circumstances, but it may not tell you what to do for the unique patient before you now in your unique setting.  IDSA &amp; ATS explicitly emphasize adaptation of their guideline to local culture and resistance patterns.  If aspects of the guidance here are unclear or if you find discrepancies between the guidelines and the material presented here, please contact me immediately at About App tab email, jds.pocapps@gmail.com. 
 
-  This tool is no substitute for sophisticated clinical knowledge of pneumonia care, but rather it is a support for your sophisticated clinical knowledge and care.  It merely organizes helpful information that will remind you of the little details which will help you do good work.  Use this as a starting point and then tailor your care to your patient in your setting in your community with your resources.  You must have a thorough knowledge of pneumonia.  You must have awareness of your own local pneumonia standards and circumstances.  And you must do your own thinking.</mutableString>
+  This tool is no substitute for sophisticated clinical knowledge of pneumonia care, but rather it is a support for your sophisticated clinical knowledge and care.  It merely organizes helpful information that will remind you of the little details which will help you do good work.  Use this as a starting point and then tailor your care to your patient in your setting in your community with your resources.  You must have a thorough knowledge of pneumonia.  You must have awareness of your own local pneumonia standards and circumstances.  And you must do your own thinking.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -137,7 +82,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E5J-GA-bOA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2096" y="-1101"/>
+            <point key="canvasLocation" x="-1959" y="-1090"/>
         </scene>
         <!--Pneumonia-->
         <scene sceneID="HrF-Gq-PjY">
@@ -418,7 +363,7 @@ Step-by-Step</string>
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <mutableString key="text"> All young infants who present for acute evaluation of fever without source are highly concerning.  Some of these babies have a potentially life-threatening invasive bacterial infection like meningitis, bacteremia, and sepsis.  Yet many more have fairly trivial conditions such as a transient viral syndrome.  Because signs and symptoms of serious infection are few and vague while the stakes for these infants are high, it is tempting to subject all to the invasive rigors hospital admission, full septic workup (blood, urine, CSF cultures), and empiric antibiotics.  This approach subjects so many infants and their parents to intensive and stressful medical process that strategies have long been sought to separate the babies with trivial fevers from the kids with serious fevers and manage them differently.  Thus the dual goals of risk assessment schemes are to (a) find lots of low-risk infants who can be spared the full extent of high-risk management, yet in doing so (b) not miss babies who do in fact have a serious infection.
+                                        <string key="text"> All young infants who present for acute evaluation of fever without source are highly concerning.  Some of these babies have a potentially life-threatening invasive bacterial infection like meningitis, bacteremia, and sepsis.  Yet many more have fairly trivial conditions such as a transient viral syndrome.  Because signs and symptoms of serious infection are few and vague while the stakes for these infants are high, it is tempting to subject all to the invasive rigors hospital admission, full septic workup (blood, urine, CSF cultures), and empiric antibiotics.  This approach subjects so many infants and their parents to intensive and stressful medical process that strategies have long been sought to separate the babies with trivial fevers from the kids with serious fevers and manage them differently.  Thus the dual goals of risk assessment schemes are to (a) find lots of low-risk infants who can be spared the full extent of high-risk management, yet in doing so (b) not miss babies who do in fact have a serious infection.
 
 The Step-by-Step validation study evaluated 3 different schemes for their ability to distinguish low risk young infants from high risk ones, comparing all to the infants' actual outcomes.  Pediatric emergency departments in 3 European countries participated.  Between September 2012 and August 2014, 8 Peds ED's in Spain, 2 in Italy, and 1 in Switzerland enrolled infants ≤ 90 days old with fever ≥ 38.0°C (100.4°F) documented at home or in the Peds ED but without evident source.  All infants had the evaluations and lab testing necessary for the three schemes (urine for UA, blood for CRP, PCT, WBC, differential, although absolute band count not available at all centers) plus any further testing at discretion of managing physician (e.g. LP studies, influenza testing, etc.).  Further management was also at the discretion of clinicians and by protocol of each Peds ED, with some infants receiving antibiotics, some not, some being admitted, some discharged home for prompt followup.  Outpatient mgmt outcomes were assessed by telephone followup, which if unsuccessful, was supplemented by subsequent care records in electronic health registries.
 
@@ -430,7 +375,7 @@ And a missed IBI case does not necessarily mean a bad outcome ensues.  ED's have
 
 There are a couple more issues worth noting.  First is analysis of the IBI cases missed by Step-by-Step scheme.  6 of the 7 had fever firstly detected for but a single hour or less at the time of evaluation, thus short duration of observed fever may produce false low-risk designations.  And it was also noted that 4 of the 7 were between 22 and 28 days old, suggesting that these infants in their 4th week of life may deserve special caution and attention.
 
-The second issue worth noting is that the classic Rochester criteria were not perfectly executed on all infants in the study.  Some centers did not have absolute band counts available.  Although it would be ideal to have the count on all infants, the study authors judged that with normal WBC 5,000-15,000 it would be unlikely that the absolute band count would be &gt; 1,500.  Thus, with all other Rochester criteria favorable but no absolute band count, such babies were counted as meeting low-risk Rochester criteria.  Were absolute band count available in all cases, it is possible that the performance of Rochester criteria would have been different. </mutableString>
+The second issue worth noting is that the classic Rochester criteria were not perfectly executed on all infants in the study.  Some centers did not have absolute band counts available.  Although it would be ideal to have the count on all infants, the study authors judged that with normal WBC 5,000-15,000 it would be unlikely that the absolute band count would be &gt; 1,500.  Thus, with all other Rochester criteria favorable but no absolute band count, such babies were counted as meeting low-risk Rochester criteria.  Were absolute band count available in all cases, it is possible that the performance of Rochester criteria would have been different. </string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -634,7 +579,7 @@ The goal of evaluation is to find febrile babies who are at lower or higher risk
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="659"/>
                                         <subviews>
                                             <imageView multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Step-by-Step annotated.png" translatesAutoresizingMaskIntoConstraints="NO" id="NoY-dO-46k">
-                                                <rect key="frame" x="0.0" y="0.0" width="320" height="659"/>
+                                                <rect key="frame" x="0.0" y="24" width="320" height="610"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             </imageView>
                                         </subviews>
@@ -683,11 +628,10 @@ The goal of evaluation is to find febrile babies who are at lower or higher risk
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5g6-2g-MVb">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="736"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="304" translatesAutoresizingMaskIntoConstraints="NO" id="DKt-Uj-Ury">
-                                                <rect key="frame" x="8" y="78" width="304" height="339"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="304" translatesAutoresizingMaskIntoConstraints="NO" id="DKt-Uj-Ury">
+                                                <rect key="frame" x="8" y="43.5" width="304" height="325"/>
                                                 <string key="text">Written to put reference information about pneumonia management in the hands of clinicians, students, and residents at the point of care.
  Content+Design: Joshua Steinberg MD, 
   Alla Roitman DO, Edelweiss Peralta MD,
@@ -698,7 +642,6 @@ Programmer: Joshua Steinberg MD;
   HeeRak Kang MSIV, SUNY Upstate
   Medical University, Syracuse NY
 
-Feedback: 
 Platform: iOS 7.0 and later
 Version: 4.0
 Copyright: April, 2017</string>
@@ -706,88 +649,107 @@ Copyright: April, 2017</string>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wqe-5b-z3w">
-                                                <rect key="frame" x="83" y="351" width="196" height="20"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Development of Pneumonia Guide" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yaC-Xo-5fQ">
+                                                <rect key="frame" x="58" y="15" width="204" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feedback:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5p-Q3-EA5">
+                                                <rect key="frame" x="16" y="388.5" width="80" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="oVB-tE-bGY"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wqe-5b-z3w">
+                                                <rect key="frame" x="104" y="388.5" width="208" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="5VE-r7-JvV"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <state key="normal" title="jds.pocapps@gmail.com"/>
                                                 <connections>
                                                     <action selector="emailFeedback:" destination="CRg-GY-4hB" eventType="touchUpInside" id="35L-Ex-f16"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Development of Pneumonia Guide" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yaC-Xo-5fQ">
-                                                <rect key="frame" x="58" y="15" width="204" height="55"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" red="0.5568627451" green="0.80784313730000001" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="568" id="XW5-Ng-Ttd"/>
-                                            <constraint firstAttribute="width" constant="320" id="yE7-Oh-ve9"/>
+                                            <constraint firstAttribute="trailing" secondItem="wqe-5b-z3w" secondAttribute="trailing" constant="8" id="4QF-ID-iyt"/>
+                                            <constraint firstItem="yaC-Xo-5fQ" firstAttribute="leading" secondItem="5g6-2g-MVb" secondAttribute="leading" constant="58" id="7mz-Nn-yv2"/>
+                                            <constraint firstItem="A5p-Q3-EA5" firstAttribute="leading" secondItem="5g6-2g-MVb" secondAttribute="leading" constant="16" id="DDg-DZ-ukr"/>
+                                            <constraint firstItem="yaC-Xo-5fQ" firstAttribute="top" secondItem="5g6-2g-MVb" secondAttribute="top" constant="15" id="DcU-EO-duM"/>
+                                            <constraint firstAttribute="trailing" secondItem="DKt-Uj-Ury" secondAttribute="trailing" constant="8" id="Mof-6c-Rac"/>
+                                            <constraint firstItem="DKt-Uj-Ury" firstAttribute="top" secondItem="yaC-Xo-5fQ" secondAttribute="bottom" constant="8" id="NVd-Me-jYP"/>
+                                            <constraint firstAttribute="trailing" secondItem="yaC-Xo-5fQ" secondAttribute="trailing" constant="58" id="RkZ-Qx-TAH"/>
+                                            <constraint firstItem="A5p-Q3-EA5" firstAttribute="top" secondItem="DKt-Uj-Ury" secondAttribute="bottom" constant="20" id="VAu-zv-03z"/>
+                                            <constraint firstItem="wqe-5b-z3w" firstAttribute="leading" secondItem="A5p-Q3-EA5" secondAttribute="trailing" constant="8" id="Vcb-Ta-L1b"/>
+                                            <constraint firstAttribute="height" constant="736" id="XW5-Ng-Ttd" userLabel="height = 736"/>
+                                            <constraint firstItem="DKt-Uj-Ury" firstAttribute="leading" secondItem="5g6-2g-MVb" secondAttribute="leading" constant="8" id="gcq-1B-XsO"/>
+                                            <constraint firstItem="wqe-5b-z3w" firstAttribute="top" secondItem="DKt-Uj-Ury" secondAttribute="bottom" constant="20" id="jGG-FV-KsD"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="5g6-2g-MVb" firstAttribute="leading" secondItem="lqY-pJ-zIj" secondAttribute="leading" id="1kf-VI-5U1"/>
-                                    <constraint firstAttribute="bottom" secondItem="5g6-2g-MVb" secondAttribute="bottom" id="4z5-Wu-c3q"/>
-                                    <constraint firstAttribute="height" constant="568" id="6E5-hN-Bf2"/>
-                                    <constraint firstAttribute="trailing" secondItem="5g6-2g-MVb" secondAttribute="trailing" id="M5O-0Z-HEv"/>
-                                    <constraint firstAttribute="width" constant="320" id="ker-c1-3zs"/>
-                                    <constraint firstItem="5g6-2g-MVb" firstAttribute="top" secondItem="lqY-pJ-zIj" secondAttribute="top" id="m5B-xV-PYV"/>
+                                    <constraint firstAttribute="trailing" secondItem="5g6-2g-MVb" secondAttribute="trailing" id="C1r-vn-Dae"/>
+                                    <constraint firstItem="5g6-2g-MVb" firstAttribute="top" secondItem="lqY-pJ-zIj" secondAttribute="top" id="Jfe-YJ-7zH"/>
+                                    <constraint firstAttribute="bottom" secondItem="5g6-2g-MVb" secondAttribute="bottom" id="ebc-qa-XPD"/>
+                                    <constraint firstItem="5g6-2g-MVb" firstAttribute="leading" secondItem="lqY-pJ-zIj" secondAttribute="leading" id="zSq-35-tgd"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.5568627451" green="0.80784313730000001" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="lqY-pJ-zIj" secondAttribute="bottom" id="00g-w5-bAe"/>
-                            <constraint firstAttribute="trailing" secondItem="lqY-pJ-zIj" secondAttribute="trailing" id="3Qy-Uc-O6p"/>
-                            <constraint firstItem="lqY-pJ-zIj" firstAttribute="leading" secondItem="4t8-ZO-BGv" secondAttribute="leading" id="QbZ-eI-yVS"/>
-                            <constraint firstItem="lqY-pJ-zIj" firstAttribute="top" secondItem="4t8-ZO-BGv" secondAttribute="top" id="fWZ-4O-8TL"/>
+                            <constraint firstAttribute="trailing" secondItem="lqY-pJ-zIj" secondAttribute="trailing" id="EkD-Yt-l6M"/>
+                            <constraint firstItem="5g6-2g-MVb" firstAttribute="width" secondItem="4t8-ZO-BGv" secondAttribute="width" id="Znh-hD-OnH"/>
+                            <constraint firstAttribute="bottom" secondItem="lqY-pJ-zIj" secondAttribute="bottom" id="kM9-gH-LXj"/>
+                            <constraint firstItem="lqY-pJ-zIj" firstAttribute="top" secondItem="4t8-ZO-BGv" secondAttribute="top" id="qHk-wZ-cWY"/>
+                            <constraint firstItem="lqY-pJ-zIj" firstAttribute="leading" secondItem="4t8-ZO-BGv" secondAttribute="leading" id="yBz-iC-qFI"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="About App" image="info.png" id="fEV-ro-g4B"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KA7-gm-VkP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2473" y="-1186"/>
+            <point key="canvasLocation" x="-2424" y="-1183"/>
         </scene>
         <!--References-->
         <scene sceneID="exJ-0c-qAw">
             <objects>
-                <viewController id="wJU-s4-2Jo" customClass="ReferenceViewController" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="wJU-s4-2Jo" customClass="ReferenceViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="sLq-tL-TUj"/>
                         <viewControllerLayoutGuide type="bottom" id="nWV-JD-AVT"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="EgS-rt-YkW">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="1600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gmE-DT-lPQ">
-                                <rect key="frame" x="0.0" y="24" width="320" height="1576"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jYU-jo-NwT">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="1576"/>
                                         <subviews>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PubMed hotlinks:" lineBreakMode="tailTruncation" numberOfLines="200" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="K3h-ay-WmI">
                                                 <rect key="frame" x="10" y="37" width="300" height="20"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="References" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RMj-tc-JDR">
                                                 <rect key="frame" x="117" y="6" width="87" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="rq9-RM-14o">
                                                 <rect key="frame" x="10" y="65" width="300" height="116"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <state key="normal">
                                                     <string key="title">Infectious Disease Society of America &amp; American Thoracic Society Consensus Guidelines on the Management of Community-Acquired Pneumonia in Adults.  Mandell et. al., Clin Infect Dis 2007; 44:S27-72.</string>
@@ -798,7 +760,7 @@ Copyright: April, 2017</string>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Llo-Mc-b0C">
                                                 <rect key="frame" x="10" y="189" width="300" height="140"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <state key="normal">
                                                     <string key="title">Management of Adults With Hospital-acquired and Ventilator-associated Pneumonia: 2016 Clinical Practice Guidelines by the Infectious Diseases Society of America and the American Thoracic Society.  Kalil et. al., Clin Infect Dis 2016 Sep 1;63(5):e61-e111..</string>
@@ -809,7 +771,7 @@ Copyright: April, 2017</string>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="x5P-Ps-FA8">
                                                 <rect key="frame" x="10" y="741" width="300" height="76"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <state key="normal">
                                                     <string key="title">Kliegman et. al., Nelson Textbook of Pediatrics, 18th edition, Philadelphia: Saunders/Elsevier, 2007, pg. 1796-1799. (textbook, not in PubMed)</string>
@@ -817,7 +779,7 @@ Copyright: April, 2017</string>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="FEE-UR-l80">
                                                 <rect key="frame" x="10" y="825" width="300" height="117"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <state key="normal">
                                                     <string key="title">Bernheisel C. and Schlaudecker J., Managing Community Acquired Pneumonia, an Evidence-Based Algorithm, 8 guidelines for site-of-care and treatment decisions.  J Fam Pract, vol. 6, no. 9, pg. 720-726, Sept. 2007.</string>
@@ -828,7 +790,7 @@ Copyright: April, 2017</string>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="nn2-FQ-5xD">
                                                 <rect key="frame" x="10" y="950" width="300" height="57"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <state key="normal" title="Bauer TT, et al., CRB-65 Predicts Death From Community-Acquired Pneumonia, J Internal Med 2006; 260: 93–101."/>
                                                 <connections>
@@ -837,7 +799,7 @@ Copyright: April, 2017</string>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="cZf-ik-Mhc">
                                                 <rect key="frame" x="10" y="337" width="300" height="104"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <state key="normal">
                                                     <string key="title">Guidelines for the Management of Adults with Hospital-acquired, Ventilator-associated, and Healthcare-associated Pneumonia.  Am J Respir Crit Care Med, vol. 171, pg. 388-416, 2005.*</string>
@@ -848,7 +810,7 @@ Copyright: April, 2017</string>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ku9-jY-bLL">
                                                 <rect key="frame" x="10" y="449" width="300" height="159"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <state key="normal">
                                                     <string key="title">The Management of Community-Acquired Pneumonia in Infants and Children Older Than 3 Months of Age: Clinical Practice Guidelines by the Pediatric Infectious Diseases Society and the Infectious Diseases Society of America.  Bradley et. al., Clin Infect Dis 2011; 53(7):e25-e76.</string>
@@ -859,7 +821,7 @@ Copyright: April, 2017</string>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="zTX-P4-Tqh">
                                                 <rect key="frame" x="10" y="616" width="300" height="117"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <state key="normal">
                                                     <string key="title">Clinical Practice Guidelines by the Infectious Diseases Society of America for the Treatment of Methicillin-Resistant Staphylococcus Aureus Infections in Adults and Children.  Liu et. al., Clin Infect Dis 2011; 52:1-38.</string>
@@ -870,7 +832,7 @@ Copyright: April, 2017</string>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="HpN-cX-r1z">
                                                 <rect key="frame" x="10" y="1015" width="300" height="101"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <state key="normal">
                                                     <string key="title">O. Ochoa-Gondar O., et. al., Comparison of three predictive rules for assessing severity in elderly patients with CAP, Int J Clin Pract, November 2011, 65, 11, 1165–1172.</string>
@@ -882,32 +844,28 @@ Copyright: April, 2017</string>
                                         </subviews>
                                         <color key="backgroundColor" red="0.5568627451" green="0.80784313730000001" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="320" id="3Cf-UC-3d3"/>
-                                            <constraint firstAttribute="height" constant="1576" id="kpg-jL-89s"/>
+                                            <constraint firstAttribute="height" constant="1576" id="kpg-jL-89s" userLabel="height = 1526"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="jYU-jo-NwT" secondAttribute="trailing" id="0jF-X6-jVs"/>
-                                    <constraint firstAttribute="width" constant="320" id="4XL-n3-rt9"/>
-                                    <constraint firstAttribute="height" constant="1576" id="5oO-aU-q3s"/>
-                                    <constraint firstAttribute="bottom" secondItem="jYU-jo-NwT" secondAttribute="bottom" id="SaM-pw-pRT"/>
-                                    <constraint firstItem="jYU-jo-NwT" firstAttribute="top" secondItem="gmE-DT-lPQ" secondAttribute="top" id="Z7q-07-7Ax"/>
-                                    <constraint firstItem="jYU-jo-NwT" firstAttribute="leading" secondItem="gmE-DT-lPQ" secondAttribute="leading" id="Zr3-rX-CGb"/>
+                                    <constraint firstItem="jYU-jo-NwT" firstAttribute="top" secondItem="gmE-DT-lPQ" secondAttribute="top" id="DMe-EX-xDQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="jYU-jo-NwT" secondAttribute="bottom" id="Y4u-bg-UQV"/>
+                                    <constraint firstItem="jYU-jo-NwT" firstAttribute="leading" secondItem="gmE-DT-lPQ" secondAttribute="leading" id="gJ5-7C-VPP"/>
+                                    <constraint firstAttribute="trailing" secondItem="jYU-jo-NwT" secondAttribute="trailing" id="lRs-as-RWd"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.5568627451" green="0.80784313730000001" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="gmE-DT-lPQ" secondAttribute="trailing" id="2jb-HN-K6U"/>
-                            <constraint firstItem="gmE-DT-lPQ" firstAttribute="top" secondItem="sLq-tL-TUj" secondAttribute="bottom" constant="4" id="AHw-79-Qte"/>
-                            <constraint firstAttribute="bottom" secondItem="gmE-DT-lPQ" secondAttribute="bottom" id="PF6-0X-LhM"/>
-                            <constraint firstItem="gmE-DT-lPQ" firstAttribute="leading" secondItem="EgS-rt-YkW" secondAttribute="leading" id="wNm-ZK-t04"/>
+                            <constraint firstItem="gmE-DT-lPQ" firstAttribute="top" secondItem="sLq-tL-TUj" secondAttribute="bottom" id="7FZ-WO-Kgr"/>
+                            <constraint firstAttribute="bottom" secondItem="gmE-DT-lPQ" secondAttribute="bottom" id="UkB-mg-WNr"/>
+                            <constraint firstItem="jYU-jo-NwT" firstAttribute="width" secondItem="EgS-rt-YkW" secondAttribute="width" id="gbE-w5-wRm"/>
+                            <constraint firstAttribute="trailing" secondItem="gmE-DT-lPQ" secondAttribute="trailing" id="nrN-nM-eFo"/>
+                            <constraint firstItem="gmE-DT-lPQ" firstAttribute="leading" secondItem="EgS-rt-YkW" secondAttribute="leading" id="wBb-UC-QAD"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="References" image="file.png" id="KuZ-Nt-8zX"/>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="320" height="1600"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hly-xy-VWa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -932,7 +890,7 @@ Copyright: April, 2017</string>
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <mutableString key="text"> The Rochester protocol (see references) is one of several evaluation schemes with the goal of separating young febrile infants with low risk of invasive bacterial infection from those with high risk.  In the 1994 Rochester criteria validation study, high risk infants were admitted for full septic workup and empiric antibiotics while low risk infants were sent home with no further workup, with no empiric antibiotics, with careful observation instructions to parents, and with short interval outpatient followup.  The Rochester criteria to qualify as low risk for invasive bacterial infection are:
+                                        <string key="text"> The Rochester protocol (see references) is one of several evaluation schemes with the goal of separating young febrile infants with low risk of invasive bacterial infection from those with high risk.  In the 1994 Rochester criteria validation study, high risk infants were admitted for full septic workup and empiric antibiotics while low risk infants were sent home with no further workup, with no empiric antibiotics, with careful observation instructions to parents, and with short interval outpatient followup.  The Rochester criteria to qualify as low risk for invasive bacterial infection are:
 - age ≤ 60 days
 - previously healthy
 - born term (≥37 wks gestation)
@@ -947,7 +905,7 @@ In the 1994 study, 437 of 931 infants evaluated met the low risk criteria.  Of t
 
 But how about today?  A potential concern about use of Rochester criteria 20+ years after its development is that today's febrile infants may differ from those a generation ago.  We have new vaccines (e.g. Haemophilus Influenza B), we have new community pathogens (e.g. MRSA), and we have new rates of newborns colonized with skin flora rather than vaginal flora courtesy significantly higher c-section delivery rates.  Rochester criteria are still pretty good.  The Step-by-Step 2016 study assessed their accuracy as a comparator.
 
-See "about Step-by-Step study" for Rochester criteria diagnostic accuracy on the multicenter international modern cohort and comparison to the Step-by-Step accuracy (very similar, Step-by-Step slightly better).</mutableString>
+See "about Step-by-Step study" for Rochester criteria diagnostic accuracy on the multicenter international modern cohort and comparison to the Step-by-Step accuracy (very similar, Step-by-Step slightly better).</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -1910,11 +1868,20 @@ For more topics and guidance on Community Acquired Pneumonia management, choose 
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jh7-ta-qp5">
                                 <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                                 <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jkl-NO-BtX">
+                                        <rect key="frame" x="20" y="8" width="280" height="263"/>
+                                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <string key="text">Routine testing to determine the causative organism of community acquired pneumoniamild enough to be treated in the outpatient setting is optional.  Use your knowledge of the patient and your clinical judgment to consider blood and sputum cultures and urinary microbial antigen testing.
+
+For more topics and guidance on Community Acquired Pneumonia management, choose "Comm Acq Pneumonia topics" button below.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r4K-h3-D9q">
-                                        <rect key="frame" x="20" y="292" width="280" height="34"/>
+                                        <rect key="frame" x="20" y="344" width="280" height="34"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="34" id="oao-Bi-lk3"/>
+                                            <constraint firstAttribute="height" constant="34" id="sci-1s-5sZ"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -1926,8 +1893,11 @@ For more topics and guidance on Community Acquired Pneumonia management, choose 
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DXo-G1-k8t">
-                                        <rect key="frame" x="20" y="330" width="280" height="21"/>
+                                        <rect key="frame" x="20" y="301" width="280" height="34"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="VTG-3N-adU"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="Initial antibiotics">
@@ -1937,37 +1907,28 @@ For more topics and guidance on Community Acquired Pneumonia management, choose 
                                             <segue destination="Zex-iG-gUf" kind="push" id="Jl9-NT-Gne"/>
                                         </connections>
                                     </button>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jkl-NO-BtX">
-                                        <rect key="frame" x="20" y="8" width="280" height="276"/>
-                                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <string key="text">Routine testing to determine the causative organism of community acquired pneumoniamild enough to be treated in the outpatient setting is optional.  Use your knowledge of the patient and your clinical judgment to consider blood and sputum cultures and urinary microbial antigen testing.
-
-For more topics and guidance on Community Acquired Pneumonia management, choose "Comm Acq Pneumonia topics" button below.</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.5568627451" green="0.80784313730000001" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="DXo-G1-k8t" firstAttribute="top" secondItem="r4K-h3-D9q" secondAttribute="bottom" constant="4" id="06c-bm-tXn"/>
-                                    <constraint firstAttribute="bottom" secondItem="DXo-G1-k8t" secondAttribute="bottom" constant="104" id="0eb-2H-BKz"/>
-                                    <constraint firstAttribute="trailing" secondItem="r4K-h3-D9q" secondAttribute="trailing" constant="20" id="78p-di-rRU"/>
-                                    <constraint firstItem="DXo-G1-k8t" firstAttribute="leading" secondItem="Jh7-ta-qp5" secondAttribute="leading" constant="20" id="9i6-p5-YpE"/>
-                                    <constraint firstAttribute="trailing" secondItem="DXo-G1-k8t" secondAttribute="trailing" constant="20" id="cHL-Fq-uyg"/>
-                                    <constraint firstItem="jkl-NO-BtX" firstAttribute="top" secondItem="Jh7-ta-qp5" secondAttribute="top" constant="8" id="dYB-TM-Lfe"/>
-                                    <constraint firstItem="r4K-h3-D9q" firstAttribute="top" secondItem="jkl-NO-BtX" secondAttribute="bottom" constant="8" id="fbM-BZ-SUy"/>
-                                    <constraint firstItem="r4K-h3-D9q" firstAttribute="leading" secondItem="Jh7-ta-qp5" secondAttribute="leading" constant="20" id="nrM-EC-c4g"/>
-                                    <constraint firstAttribute="trailing" secondItem="jkl-NO-BtX" secondAttribute="trailing" constant="20" id="rhM-Nk-l2o"/>
-                                    <constraint firstItem="jkl-NO-BtX" firstAttribute="leading" secondItem="Jh7-ta-qp5" secondAttribute="leading" constant="20" id="tTw-08-sdN"/>
+                                    <constraint firstItem="jkl-NO-BtX" firstAttribute="leading" secondItem="Jh7-ta-qp5" secondAttribute="leading" constant="20" id="75H-hV-Ibw"/>
+                                    <constraint firstItem="DXo-G1-k8t" firstAttribute="leading" secondItem="Jh7-ta-qp5" secondAttribute="leading" constant="20" id="Fq5-E8-aCg"/>
+                                    <constraint firstItem="DXo-G1-k8t" firstAttribute="top" secondItem="jkl-NO-BtX" secondAttribute="bottom" constant="30" id="Ob2-Yr-6bh"/>
+                                    <constraint firstAttribute="bottom" secondItem="r4K-h3-D9q" secondAttribute="bottom" constant="77" id="PD1-iv-Oc9"/>
+                                    <constraint firstItem="r4K-h3-D9q" firstAttribute="top" secondItem="DXo-G1-k8t" secondAttribute="bottom" constant="9" id="Vvi-Mi-d3b"/>
+                                    <constraint firstAttribute="trailing" secondItem="jkl-NO-BtX" secondAttribute="trailing" constant="20" id="aAc-1u-R4G"/>
+                                    <constraint firstItem="r4K-h3-D9q" firstAttribute="leading" secondItem="Jh7-ta-qp5" secondAttribute="leading" constant="20" id="doN-Et-lz7"/>
+                                    <constraint firstAttribute="trailing" secondItem="DXo-G1-k8t" secondAttribute="trailing" constant="20" id="f5A-52-ZWm"/>
+                                    <constraint firstAttribute="trailing" secondItem="r4K-h3-D9q" secondAttribute="trailing" constant="20" id="hFU-A1-SZt"/>
+                                    <constraint firstItem="jkl-NO-BtX" firstAttribute="top" secondItem="Jh7-ta-qp5" secondAttribute="top" constant="8" id="kjA-9m-AX9"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.5568627451" green="0.80784313730000001" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Jh7-ta-qp5" firstAttribute="leading" secondItem="KNZ-cw-8Me" secondAttribute="leadingMargin" constant="-16" id="JYC-34-Fy1"/>
-                            <constraint firstItem="Jh7-ta-qp5" firstAttribute="top" secondItem="wVz-AH-xWL" secondAttribute="bottom" id="X8n-KG-tnh"/>
-                            <constraint firstItem="Ux2-dt-ooa" firstAttribute="top" secondItem="Jh7-ta-qp5" secondAttribute="bottom" id="f9v-xD-gwq"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Jh7-ta-qp5" secondAttribute="trailing" constant="-16" id="v7I-3O-prX"/>
+                            <constraint firstItem="Jh7-ta-qp5" firstAttribute="leading" secondItem="KNZ-cw-8Me" secondAttribute="leadingMargin" constant="-16" id="FKj-d9-iNR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Jh7-ta-qp5" secondAttribute="trailing" constant="-16" id="I7i-tk-dyM"/>
+                            <constraint firstItem="Ux2-dt-ooa" firstAttribute="top" secondItem="Jh7-ta-qp5" secondAttribute="bottom" id="TrZ-22-9Lx"/>
+                            <constraint firstItem="Jh7-ta-qp5" firstAttribute="top" secondItem="wVz-AH-xWL" secondAttribute="bottom" id="rEE-lv-dy6"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Outpatient tests" id="jQ1-MT-82F"/>
@@ -2004,7 +1965,7 @@ For more topics and guidance on Community Acquired Pneumonia management, choose 
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="inpt dx tests table copy.png" translatesAutoresizingMaskIntoConstraints="NO" id="XVP-wf-Rd5">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="inpt dx tests table copy.png" translatesAutoresizingMaskIntoConstraints="NO" id="XVP-wf-Rd5">
                                                 <rect key="frame" x="10" y="213" width="300" height="430"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -4432,7 +4393,7 @@ Alternatives: Peramivir, oseltamivir and zanamivir (all intravenous) are under c
         <!--Peds Inpt ABX atypical-->
         <scene sceneID="N0o-RB-eN5">
             <objects>
-                <viewController title="Peds Inpt ABX atypical" automaticallyAdjustsScrollViewInsets="NO" id="H7G-nA-MlB" sceneMemberID="viewController">
+                <viewController title="Peds Inpt ABX atypical" automaticallyAdjustsScrollViewInsets="NO" id="H7G-nA-MlB" customClass="TextViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dPO-FK-fi4"/>
                         <viewControllerLayoutGuide type="bottom" id="aqk-BR-8X6"/>
@@ -4469,6 +4430,9 @@ Alternatives: Clarithromycin or erythromycin; doxycycline for children &gt;7 yea
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Atypical" id="mSq-dV-OYT"/>
+                    <connections>
+                        <outlet property="textView" destination="4g0-vP-IWr" id="GZI-gN-SMY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XV0-Ce-lBh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -4669,7 +4633,7 @@ Alternatives: oral clarithromycin (15 mg/kg/day in 2 doses to a maximum of 1 g/d
                                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="zZO-Cy-ZUF" kind="push" id="QlP-F1-WRv"/>
+                                                    <segue destination="zZO-Cy-ZUF" kind="push" id="ac6-60-tP2"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5HL-XH-ecG">
@@ -4682,7 +4646,7 @@ Alternatives: oral clarithromycin (15 mg/kg/day in 2 doses to a maximum of 1 g/d
                                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="OE9-tQ-BsB" kind="push" id="hiS-ZC-30K"/>
+                                                    <segue destination="ZhP-xG-nrG" kind="push" id="o9u-sP-BKG"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A1Z-sL-fSk">
@@ -4869,7 +4833,7 @@ Alternatives: clarithromycin (15 mg/kg/day in 2 doses) or oral erythromycin (40 
         <!--Peds Mycoplasma-->
         <scene sceneID="Qrj-9k-Brn">
             <objects>
-                <viewController title="Peds Mycoplasma" id="FuE-DQ-3dN" sceneMemberID="viewController">
+                <viewController title="Peds Mycoplasma" automaticallyAdjustsScrollViewInsets="NO" id="FuE-DQ-3dN" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZGo-th-yIq"/>
                         <viewControllerLayoutGuide type="bottom" id="8U3-Wi-cag"/>
@@ -5081,7 +5045,7 @@ Alternative: oral linezolid (30 mg/kg/day in 3 doses for children &lt;12 years a
         <!--Peds S aureus meth S-->
         <scene sceneID="WEK-Qf-cdx">
             <objects>
-                <viewController title="Peds S aureus meth S" automaticallyAdjustsScrollViewInsets="NO" id="rpL-fK-hQ5" sceneMemberID="viewController">
+                <viewController title="Peds S aureus meth S" automaticallyAdjustsScrollViewInsets="NO" id="rpL-fK-hQ5" customClass="TextViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="m5O-s1-ZOr"/>
                         <viewControllerLayoutGuide type="bottom" id="RT3-oc-1aB"/>
@@ -5126,6 +5090,9 @@ Alternative: oral clindamycin (30–40 mg/kg/day in 3 or 4 doses)</string>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Staph aureus" id="pWS-UK-3oK"/>
+                    <connections>
+                        <outlet property="textView" destination="mEB-gs-piz" id="v2o-1y-sL4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="unF-Dp-pWD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -5182,59 +5149,6 @@ Alternative: oral clindamycin (40 mg/kg/day in 3 doses)</string>
             </objects>
             <point key="canvasLocation" x="3147" y="5879"/>
         </scene>
-        <!--Peds Strep pneumo R-->
-        <scene sceneID="oTQ-RX-t8c">
-            <objects>
-                <viewController title="Peds Strep pneumo R" automaticallyAdjustsScrollViewInsets="NO" id="OE9-tQ-BsB" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="2LR-OP-Ktu"/>
-                        <viewControllerLayoutGuide type="bottom" id="ghR-cm-Yjp"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="KXT-nQ-yuC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="up4-7Y-CPu">
-                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
-                                <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7UI-8W-S3w">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="455"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <string key="text">Strep pneumo Penicillin resistant
-
-    PARENTERAL
-
-Preferred: ceftriaxone (100 mg/kg/day every 12–24 hours);
-
-Alternatives: ampicillin (300–400 mg/kg/day every 6 hours), levofloxacin (16–20 mg/kg/day every 12 hours for children 6 months to 5 years old and 8–10 mg/kg/day once daily for children 5–16 years old; maximum daily dose, 750 mg), or linezolid (30 mg/kg/day every 8 hours for children &lt;12 years old and 20 mg/kg/day every 12 hours for children ≥12 years old); may also be effective: clindamycin (40 mg/kg/day every 6–8 hours) or vancomycin (40–60 mg/kg/day every 6–8 hours)
-
-    ORAL (step-down or mild infxn)
-
-Preferred: oral levofloxacin (16–20 mg/kg/day in 2 doses for children 6 months to 5 years and 8–10 mg/kg/day once daily for children 5–16 years, maximum daily dose, 750 mg), if susceptible, or oral linezolid (30 mg/kg/day in 3 doses for children ≤12 years and 20 mg/kg/day in 2 doses for children ≥12 years
-
-Alternatives: oral clindamycin (30–40 mg/kg/day in 3 doses</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                </subviews>
-                                <color key="backgroundColor" red="0.5568627451" green="0.80784313730000001" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" red="0.5568627451" green="0.80784313730000001" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="up4-7Y-CPu" firstAttribute="leading" secondItem="KXT-nQ-yuC" secondAttribute="leadingMargin" constant="-16" id="6WH-YG-cVa"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="up4-7Y-CPu" secondAttribute="trailing" constant="-16" id="Dcl-8L-1QH"/>
-                            <constraint firstItem="ghR-cm-Yjp" firstAttribute="top" secondItem="up4-7Y-CPu" secondAttribute="bottom" id="Zat-EH-q0U"/>
-                            <constraint firstItem="up4-7Y-CPu" firstAttribute="top" secondItem="2LR-OP-Ktu" secondAttribute="bottom" id="dik-Bw-gVi"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Strep pneumo" id="ZHs-LY-BQP"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="DUB-6S-d50" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2692" y="5879"/>
-        </scene>
         <!--Peds Strep pneumo S-->
         <scene sceneID="bf6-UG-JLE">
             <objects>
@@ -5266,7 +5180,7 @@ Alternatives: ceftriaxone (50–100 mg/kg/day every 12–24 hours) (preferred fo
 
 Preferred: amoxicillin (90 mg/kg/day in 2 doses or 45 mg/kg/day in 3 doses);
 
-Alternatives: 2nd or 3rd-generation cephalosporin (cefpodoxime, cefuroxime, cefprozil); oral levofloxacin, if susceptible (16–20 mg/kg/day in 2 doses for children 6 months to 5 years old and 8–10 mg/kg/day once daily for children 5 to 16 years old; maximum daily dose, 750 mg) or oral linezolid (30 mg/kg/day in 3 doses for children &lt;12 years old and 20 mg/kg/day in 2 doses for children ≥12 years old)</string>
+Alternatives: 2nd or 3rd-generation cephalosporin (cefpodoxime, cefuroxime, cefprozil); oral levofloxacin, if susceptible (16–20 mg/kg/day in 2 doses for children 6 months to 5 years old and 8–10 mg/kg/day once daily for children 5 to 16 years old; maximum daily dose, 750 mg) or oral linezolid (30 mg/kg/day in 3 doses for children &lt;12 years old and 20 mg/kg/day in 2 doses for children &gt;= 12 years old)</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -5286,7 +5200,63 @@ Alternatives: 2nd or 3rd-generation cephalosporin (cefpodoxime, cefuroxime, cefp
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hiY-DC-03A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2198" y="5879"/>
+            <point key="canvasLocation" x="2168" y="5879"/>
+        </scene>
+        <!--Peds Strep pneumo R-->
+        <scene sceneID="NWr-dB-9vL">
+            <objects>
+                <viewController title="Peds Strep pneumo S" automaticallyAdjustsScrollViewInsets="NO" id="ZhP-xG-nrG" userLabel="Peds Strep pneumo R" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0UO-1z-qkE"/>
+                        <viewControllerLayoutGuide type="bottom" id="OMm-ak-Vgs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6r1-ML-34r">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jVT-Eh-LlB">
+                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="war-d3-Ezr">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="455"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <string key="text">Strep pneumo Penicillin resistant
+
+    PARENTERAL
+
+Preferred: ceftriaxone (100 mg/kg/day every 12–24 hours);
+
+Alternatives: ampicillin (300–400 mg/kg/day every 6 hours), levofloxacin (16–20 mg/kg/day every 12 hours for children 6 months to 5 years old and 8–10 mg/kg/day once daily for children 5–16 years old; maximum daily dose, 750 mg), or linezolid (30 mg/kg/day every 8 hours for children &lt;12 years old and 20 mg/kg/day every 12 hours for children &gt;= 12 years old); may also be effective: clindamycin (40 mg/kg/day every 6–8 hours) or vancomycin (40–60 mg/kg/day every 6–8 hours)
+
+    ORAL (step-down or mild infxn)
+
+Preferred: oral levofloxacin (16–20 mg/kg/day in 2 doses for children 6 months to 5 years and 8–10 mg/kg/day once daily for children 5–16 years, maximum daily dose, 750 mg), if susceptible, or oral linezolid (30 mg/kg/day in 3 doses for children &lt;= 12 years and 20 mg/kg/day in 2 doses for children &gt;= 12 years
+
+Alternatives: oral clindamycin (30–40 mg/kg/day in 3 doses)
+Strep pneumo Penicillin resistant
+
+</string>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.5568627451" green="0.80784313730000001" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.5568627451" green="0.80784313730000001" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jVT-Eh-LlB" firstAttribute="leading" secondItem="6r1-ML-34r" secondAttribute="leadingMargin" constant="-16" id="ea4-aN-MX6"/>
+                            <constraint firstItem="jVT-Eh-LlB" firstAttribute="top" secondItem="0UO-1z-qkE" secondAttribute="bottom" id="ioG-7u-V88"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jVT-Eh-LlB" secondAttribute="trailing" constant="-16" id="n6G-Nf-LpE"/>
+                            <constraint firstItem="OMm-ak-Vgs" firstAttribute="top" secondItem="jVT-Eh-LlB" secondAttribute="bottom" id="z4f-vt-0qN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Strep pneumo" id="pOs-ZB-YzX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cye-yF-C35" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2692" y="5782"/>
         </scene>
     </scenes>
     <resources>
@@ -5304,12 +5274,12 @@ Alternatives: 2nd or 3rd-generation cephalosporin (cefpodoxime, cefuroxime, cefp
         <simulatedScreenMetrics key="destination" type="retina4_0.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="chB-ht-Thw"/>
         <segue reference="N8I-jK-f8u"/>
+        <segue reference="nSS-wO-nBo"/>
         <segue reference="8op-cI-bkh"/>
-        <segue reference="tyI-tX-lIB"/>
-        <segue reference="711-Vg-1d8"/>
-        <segue reference="PzY-rh-FR5"/>
+        <segue reference="Jl9-NT-Gne"/>
         <segue reference="aJM-8L-jju"/>
+        <segue reference="PzY-rh-FR5"/>
+        <segue reference="tyI-tX-lIB"/>
     </inferredMetricsTieBreakers>
 </document>
